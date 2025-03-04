@@ -1,0 +1,118 @@
+[
+    {
+      "location": "Chennai",
+      "options": [
+        {
+          "type": "Sedan Car",
+          "provider": "Chennai City Cabs",
+          "maxCapacity": 4,
+          "dailyRate": 2500,
+          "contactInfo": "+91 9876543210",
+          "bookingInfo": "Book 24 hours in advance"
+        },
+        {
+          "type": "SUV",
+          "provider": "Chennai City Cabs",
+          "maxCapacity": 6,
+          "dailyRate": 3500,
+          "contactInfo": "+91 9876543210",
+          "bookingInfo": "Book 24 hours in advance"
+        },
+        {
+          "type": "Tempo Traveller",
+          "provider": "Chennai Tours & Travels",
+          "maxCapacity": 12,
+          "dailyRate": 5000,
+          "contactInfo": "+91 9876543211",
+          "bookingInfo": "Book 48 hours in advance"
+        }
+      ]
+    },
+    {
+      "location": "Pondicherry",
+      "options": [
+        {
+          "type": "Sedan Car",
+          "provider": "Pondy Travels",
+          "maxCapacity": 4,
+          "dailyRate": 2000,
+          "contactInfo": "+91 9876543212",
+          "bookingInfo": "Book 24 hours in advance"
+        },
+        {
+          "type": "Scooter/Bike",
+          "provider": "Pondy Bike Rentals",
+          "maxCapacity": 2,
+          "dailyRate": 500,
+          "contactInfo": "+91 9876543213",
+          "bookingInfo": "Bring valid driving license"
+        },
+        {
+          "type": "Tempo Traveller",
+          "provider": "Pondicherry Group Tours",
+          "maxCapacity": 12,
+          "dailyRate": 4500,
+          "contactInfo": "+91 9876543214",
+          "bookingInfo": "Book 48 hours in advance"
+        }
+      ]
+    },
+    {
+      "location": "Mahabalipuram",
+      "options": [
+        {
+          "type": "Sedan Car",
+          "provider": "Mahabalipuram Travels",
+          "maxCapacity": 4,
+          "dailyRate": 2200,
+          "contactInfo": "+91 9876543215",
+          "bookingInfo": "Book 24 hours in advance"
+        },
+        {
+          "type": "Tourist Auto",
+          "provider": "Local Auto Association",
+          "maxCapacity": 3,
+          "dailyRate": 1500,
+          "contactInfo": "+91 9876543216",
+          "bookingInfo": "Book through hotel"
+        },
+        {
+          "type": "Tempo Traveller",
+          "provider": "East Coast Tours",
+          "maxCapacity": 12,
+          "dailyRate": 4800,
+          "contactInfo": "+91 9876543217",
+          "bookingInfo": "Book 48 hours in advance"
+        }
+      ]
+    },
+    {
+      "location": "Vellore",
+      "options": [
+        {
+          "type": "Sedan Car",
+          "provider": "Vellore City Tours",
+          "maxCapacity": 4,
+          "dailyRate": 2000,
+          "contactInfo": "+91 9876543218",
+          "bookingInfo": "Book 24 hours in advance"
+        },
+        {
+          "type": "SUV",
+          "provider": "Vellore City Tours",
+          "maxCapacity": 6,
+          "dailyRate": 3000,
+          "contactInfo": "+91 9876543218",
+          "bookingInfo": "Book 24 hours in advance"
+        },
+        {
+          "type": "Tempo Traveller",
+          "provider": "Vellore Group Travels",
+          "maxCapacity": 12,
+          "dailyRate": 4500,
+          "contactInfo": "+91 9876543219",
+          "bookingInfo": "Book 48 hours in advance"
+        }
+      ]
+    }
+  ]

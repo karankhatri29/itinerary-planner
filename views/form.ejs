@@ -1,0 +1,124 @@
+<!-- views/form.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamil Nadu Itinerary Planner</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+                <h2 class="text-center">Tamil Nadu Itinerary Planner</h2>
+            </div>
+            <div class="card-body">
+                <form id="itineraryForm" action="/plan" method="POST">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="startDate" class="form-label">Start Date:</label>
+                            <input type="date" class="form-control" id="startDate" name="startDate" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="endDate" class="form-label">End Date:</label>
+                            <input type="date" class="form-control" id="endDate" name="endDate" required>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="location" class="form-label">Select Location:</label>
+                        <select class="form-select" id="location" name="location" required>
+                            <option value="" selected disabled>Choose a location</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Vellore">Vellore</option>
+                            <option value="Pondicherry">Pondicherry</option>
+                            <option value="Mahabalipuram">Mahabalipuram</option>
+                            <option value="Ooty">Ooty</option>
+                            <option value="Kodaikanal">Kodaikanal</option>
+                            <option value="Madurai">Madurai</option>
+                            <option value="Thanjavur">Thanjavur</option>
+                            <option value="Kanyakumari">Kanyakumari</option>
+                            <option value="Rameswaram">Rameswaram</option>
+                        </select>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="budget" class="form-label">Budget (in INR):</label>
+                            <input type="number" class="form-control" id="budget" name="budget" min="1000" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="travelers" class="form-label">Number of Travelers:</label>
+                            <input type="number" class="form-control" id="travelers" name="travelers" min="1" max="20" required>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Travel Preferences:</label>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="adventure" name="preferences" value="adventure">
+                                    <label class="form-check-label" for="adventure">Adventure & Sports</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="luxury" name="preferences" value="luxury">
+                                    <label class="form-check-label" for="luxury">Luxury Experiences</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="food" name="preferences" value="food">
+                                    <label class="form-check-label" for="food">Food Experiences</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="relaxation" name="preferences" value="relaxation">
+                                    <label class="form-check-label" for="relaxation">Relaxation</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="cultural" name="preferences" value="cultural">
+                                    <label class="form-check-label" for="cultural">Cultural & Heritage</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="nature" name="preferences" value="nature">
+                                    <label class="form-check-label" for="nature">Nature & Wildlife</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="accommodation" class="form-label">Preferred Accommodation:</label>
+                        <select class="form-select" id="accommodation" name="accommodation">
+                            <option value="budget">Budget</option>
+                            <option value="mid-range">Mid-Range</option>
+                            <option value="luxury">Luxury</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="transport" class="form-label">Preferred Transport:</label>
+                        <select class="form-select" id="transport" name="transport">
+                            <option value="public">Public Transport</option>
+                            <option value="cab">Cab Services</option>
+                            <option value="rental">Car Rental</option>
+                        </select>
+                    </div>
+                    
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Generate Itinerary</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/form-validation.js"></script>
+</body>
+</html>

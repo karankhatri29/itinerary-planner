@@ -1,0 +1,238 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamil Nadu Itinerary Planner</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container position-relative">
+            <div class="row vh-75 align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content text-white">
+                        <h1 class="display-4 fw-bold mb-4">Discover the Wonders of Tamil Nadu</h1>
+                        <p class="lead mb-4">Create your perfect itinerary for exploring Tamil Nadu's rich culture, heritage, and natural beauty.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <a href="#plan-trip" class="btn btn-primary btn-lg px-4 me-md-2">Plan Your Trip</a>
+                            <a href="/destinations" class="btn btn-outline-light btn-lg px-4">Explore Destinations</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Featured Destinations</h2>
+                    <p class="section-subtitle">Discover the most popular places to visit in Tamil Nadu</p>
+                </div>
+            </div>
+            <div class="row">
+                <% featuredDestinations.forEach(destination => { %>
+                    <div class="col-md-4 mb-4">
+                        <div class="card destination-card h-100">
+                            <img src="<%= destination.imageUrl %>" class="card-img-top" alt="<%= destination.name %>">
+                            <div class="card-body">
+                                <h5 class="card-title"><%= destination.name %></h5>
+                                <p class="card-text"><%= destination.shortDescription %></p>
+                                <div class="mb-2">
+                                    <% destination.categories.slice(0, 3).forEach(category => { %>
+                                        <span class="badge bg-secondary me-1"><%= category %></span>
+                                    <% }); %>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-white border-top-0">
+                                <a href="/destinations/<%= destination.id %>" class="btn btn-outline-primary">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+                <% }); %>
+            </div>
+            <div class="text-center mt-4">
+                <a href="/destinations" class="btn btn-primary">View All Destinations</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plan Trip Section -->
+    <section id="plan-trip" class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Plan Your Perfect Trip</h2>
+                    <p class="section-subtitle">Fill in your preferences and we'll create a customized itinerary</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="card shadow">
+                        <div class="card-body p-4">
+                            <form id="quickPlanForm" action="/plan" method="POST">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="quickLocation" class="form-label">Destination</label>
+                                        <select class="form-select" id="quickLocation" name="location" required>
+                                            <option value="" selected disabled>Choose a destination</option>
+                                            <option value="Chennai">Chennai</option>
+                                            <option value="Vellore">Vellore</option>
+                                            <option value="Pondicherry">Pondicherry</option>
+                                            <option value="Mahabalipuram">Mahabalipuram</option>
+                                            <option value="Ooty">Ooty</option>
+                                            <option value="Kodaikanal">Kodaikanal</option>
+                                            <option value="Madurai">Madurai</option>
+                                            <option value="Thanjavur">Thanjavur</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="quickStartDate" class="form-label">Start Date</label>
+                                        <input type="date" class="form-control" id="quickStartDate" name="startDate" required>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="quickEndDate" class="form-label">End Date</label>
+                                        <input type="date" class="form-control" id="quickEndDate" name="endDate" required>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="quickTravelers" class="form-label">Number of Travelers</label>
+                                        <input type="number" class="form-control" id="quickTravelers" name="travelers" min="1" max="20" required>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="quickBudget" class="form-label">Budget (in INR)</label>
+                                        <input type="number" class="form-control" id="quickBudget" name="budget" min="5000" required>
+                                    </div>
+                                    <div class="col-md-4 d-flex align-items-end">
+                                        <button type="submit" class="btn btn-primary w-100">Create Itinerary</button>
+                                    </div>
+                                </div>
+                                <div class="mt-3 text-center">
+                                    <a href="/form" class="text-primary">Advanced options</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Categories -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Experiences</h2>
+                    <p class="section-subtitle">Choose from a variety of experiences Tamil Nadu has to offer</p>
+                </div>
+            </div>
+            <div class="row">
+                <% categories.forEach(category => { %>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="card category-card h-100 text-center">
+                            <div class="card-body">
+                                <div class="category-icon mb-3">
+                                    <i class="<%= category.icon %> fs-1"></i>
+                                </div>
+                                <h5 class="card-title"><%= category.name %></h5>
+                                <p class="card-text small"><%= category.description %></p>
+                            </div>
+                            <div class="card-footer bg-white border-top-0">
+                                <a href="/destinations?category=<%= category.slug %>" class="btn btn-sm btn-outline-primary">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+                <% }); %>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">What Travelers Say</h2>
+                    <p class="section-subtitle">Experiences shared by travelers who used our itinerary planner</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <% testimonials.forEach((testimonial, index) => { %>
+                                <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8">
+                                            <div class="card">
+                                                <div class="card-body text-center p-5">
+                                                    <div class="testimonial-content">
+                                                        <div class="testimonial-quote mb-4">
+                                                            <i class="bi bi-quote fs-1 text-primary"></i>
+                                                        </div>
+                                                        <p class="lead mb-4"><%= testimonial.quote %></p>
+                                                        <div class="testimonial-person">
+                                                            <h5 class="mb-0"><%= testimonial.name %></h5>
+                                                            <p class="text-muted"><%= testimonial.location %></p>
+                                                            <div class="rating text-warning">
+                                                                <% for(let i = 0; i < testimonial.rating; i++) { %>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                <% } %>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <% }); %>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-primary rounded-circle" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-primary rounded-circle" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2>Subscribe to Our Newsletter</h2>
+                    <p>Get travel tips, destination updates, and exclusive offers delivered to your inbox.</p>
+                </div>
+                <div class="col-lg-6">
+                    <form id="newsletterForm" class="row g-3">
+                        <div class="col-md-8">
+                            <input type="email" class="form-control" placeholder="Your email address" required>
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-light w-100">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/home.js"></script>
+</body>
+</html>
