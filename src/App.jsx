@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Layout from './views/layout.ejs';
-import Index from './views/index.ejs';
-import Login from './views/login.ejs';
-import Destinations from './views/destinations.ejs';
-import DestinationDetail from './views/destination-detail.ejs';
-import Form from './views/form.ejs';
-import Result from './views/result.ejs';
-import Error from '../public/views/error.ejs';
+import Layout from '../views/layout.jsx';
+import Index from '../views/index.jsx';
+import Login from '../views/login.jsx';
+import Destinations from '../views/destinations.jsx';
+import DestinationDetail from '../views/destination-detail.jsx';
+import Form from '../views/form.jsx';
+import Result from '../views/result.jsx';
+import Error from '../views/error.jsx';
 import './App.css';
 
 function App() {

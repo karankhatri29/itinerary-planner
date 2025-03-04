@@ -1,8 +1,16 @@
 const IndexController = {
-  getHomePage: (req, res) => {
+  getHomePage: async (req, res) => {
+    const featuredDestinations = await ItineraryService.getFeaturedDestinations();
+    const categories = await LocationService.getCategories();
+    const testimonials = await ItineraryService.getTestimonials();
+
     res.render('index', { 
       title: 'Itinerary Planner',
-      description: 'Plan your perfect trip with our itinerary planner'
+      description: 'Plan your perfect trip with our itinerary planner',
+      featuredDestinations,
+      categories,
+      testimonials
+
     });
   },
   
@@ -17,5 +25,3 @@ const IndexController = {
     });
   }
 };
-
-export default IndexController;
