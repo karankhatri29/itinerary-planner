@@ -228,21 +228,6 @@ const ItineraryForm = () => {
                             <button type="submit" className="btn btn-primary">Generate Itinerary</button>
                         </div>
                     </form>
-                    {/* {itinerary && (
-                        <div className="mt-4">
-                            <h3>Generated Itinerary</h3>
-                            {Array.isArray(itinerary) ? itinerary.map((day, index) => (
-                                <div key={index} className="card mt-2">
-                                    <div className="card-body">
-                                        <h5>{day.date}</h5>
-                                        <ul>
-                                            {day.activities.map((activity, idx) => <li key={idx}>{activity.name} - ₹{activity.cost}</li>)}
-                                        </ul>
-                                    </div>
-                                </div>
-                            )) : <p>{itinerary}</p>}
-                        </div>
-                    )} */}
                     {itinerary && <ItineraryResult plan={itinerary} />}
                 </div>
             </div>
