@@ -2,6 +2,26 @@ import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ItineraryResult from "./result";
 
+const getFilteredActivities = (userInput, experiences) => { 
+    const locationData = experiences.find(exp => exp.name === userInput.location);
+    console.log("user input:",userInput);
+    console.log("data:",experiences);
+    if (!locationData) {
+        console.log("Location not found!");
+        return [];
+    }
+
+    let selectedActivities = [];
+    console.log("user Preferences:",userInput.preferences); 
+    userInput.preferences.forEach(pref => {
+        if (locationData[pref]) {
+            selectedActivities.push(...locationData[pref]);
+        }
+    });
+
+    return selectedActivities;
+};
+
 const ItineraryForm = () => {
     const [formData, setFormData] = useState({
         startDate: "",
@@ -22,7 +42,7 @@ const ItineraryForm = () => {
     useEffect(() => {
         const fetchExperiences = async () => {
             try {
-                const response = await fetch("/data/locations.json"); // Ensure this file exists in the public folder
+                const response = await fetch("/data/locations.json");
                 if (!response.ok) throw new Error("Failed to fetch experiences");
     
                 const data = await response.json();
@@ -37,20 +57,19 @@ const ItineraryForm = () => {
 
     useEffect(() => {
         if (formData.location) {
-            const filtered = experiences
-                .filter(exp => exp.name === formData.location)
-                .map(city => {
-                    let selectedActivities = [];
-                    formData.preferences.forEach(pref => {
-                        if (city[pref]) selectedActivities.push(...city[pref]);
-                    });
-                    return { ...city, activities: selectedActivities };
-                });
+            const filtered = getFilteredActivities(formData, experiences).map(activity => ({
+                name: activity.name,
+                description: activity.description,
+                cost: activity.cost,
+                duration: activity.duration,
+                rating: activity.rating,
+                bestTime: activity.bestTime,
+                includesMeal: activity.includesMeal
+            }));
             setFilteredExperiences(filtered);
-            console.log(filteredExperiences);
+            console.log("Updated Filtered Experiences:", filtered);
         }
     }, [formData.location, formData.preferences, experiences]);
-
 
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
@@ -80,7 +99,6 @@ const ItineraryForm = () => {
             return;
         }
         setError("");
-        console.log(formData);
         generateItinerary();
     };
 
@@ -90,18 +108,18 @@ const ItineraryForm = () => {
         let totalBudget = parseInt(budget);
         let start = new Date(startDate);
         let end = new Date(endDate);
-
+        console.log("this is the data recieved in generate function:",filteredExperiences);
         while (start <= end && totalBudget > 0) {
             const dayPlan = [];
-
             if (filteredExperiences.length === 0) {
                 console.warn("No experiences available");
                 break;
             }
 
-            filteredExperiences.sort((a,b) => a.cost - b.cost);
-
+            filteredExperiences.sort((a, b) => a.cost - b.cost);
+            console.log("Sorted filetered experience",filteredExperiences);
             for (let exp of filteredExperiences) {
+                console.log("experience:",exp);
                 if (totalBudget >= exp.cost) {
                     dayPlan.push({ name: exp.name, description: exp.description, cost: exp.cost });
                     totalBudget -= exp.cost;
@@ -109,21 +127,22 @@ const ItineraryForm = () => {
             }
 
             if (dayPlan.length > 0) {
+                console.log("Day Plan:",dayPlan);
                 itineraryPlan.push({ date: start.toDateString(), activities: dayPlan });
             } else {
-                console.warn ("No activities found for that day");
+                console.warn("No activities found for that day");
             }
-        
+            
             start.setDate(start.getDate() + 1);
         }
         console.log(itineraryPlan);
 
         const structuredPlan = {
-            location,
+            location: formData.location,
             startDate,
             endDate,
             duration: itineraryPlan.length,
-            travelers:1,
+            travelers: formData.travelers,
             budgetBreakdown: {
                 Accommodation: Math.floor(parseInt(budget) * 0.4),
                 Transport: Math.floor(parseInt(budget) * 0.2),
@@ -132,10 +151,12 @@ const ItineraryForm = () => {
             dailyItinerary: itineraryPlan
         };
 
-        setItinerary(structuredPlan.length ? structuredPlan : "No experiences found for the selected preferences.");
+        setItinerary(structuredPlan);
+        console.log("Structured Plan Created:",structuredPlan);
+        console.log("Itinerary:",itinerary);
     };
 
-
+    
     return (
         <div className="container mt-5">
             <div className="card shadow">
