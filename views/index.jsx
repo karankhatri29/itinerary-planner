@@ -1,25 +1,28 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import "./style.css";
 
 const TamilNaduPlanner = ({ featuredDestinations = [], categories = [], testimonials = [] }) => {
   return (
     <>
       {/* Hero Section */}
-      <section className="hero" style={{ backgroundImage: "url('sample_image.jpg')" }}>
-        <div className="hero-overlay"></div>
+      <section className="hero">
+        <div className="hero-overlay">
+          
+        </div>
         <div className="container position-relative">
-          <div className="row align-items-center" style={{ height: "75vh" }}>
-            <div className="col-lg-6">
+          <div className="row align-items-center"><br></br>
+            <div className="col-lg-12">
               <div className="hero-content text-white">
-                <h1 className="display-4 fw-bold mb-4">Discover the Wonders of Tamil Nadu</h1>
+                <h1 className="display-4 fw-bold mb-4">Discover the Wonders of India</h1>
                 <p className="lead mb-4">
-                  Create your perfect itinerary for exploring Tamil Nadu's rich culture, heritage, and natural beauty.
+                  Create your perfect itinerary for exploring Inida's rich culture, heritage, and natural beauty.
                 </p>
-                <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-                  <a href="#plan-trip" className="btn btn-primary btn-lg px-4 me-md-2">
+                <div className="d-grid gap-2 d-md-flex justify-content-md-center">
+                  <a href="/form" className="btn btn-primary btn-lg px-4 me-md-2">
                     Plan Your Trip
                   </a>
-                  <a href="/destinations" className="btn btn-outline-light btn-lg px-4">
+                  <a href="/destinations" className="btn btn-outline-dark text-white btn-lg px-4">
                     Explore Destinations
                   </a>
                 </div>
@@ -28,7 +31,7 @@ const TamilNaduPlanner = ({ featuredDestinations = [], categories = [], testimon
           </div>
         </div>
       </section>
-
+      
       {/* Main Content */}
       <main>
         {/* Featured Destinations */}
@@ -36,8 +39,8 @@ const TamilNaduPlanner = ({ featuredDestinations = [], categories = [], testimon
           <div className="container">
             <div className="row mb-4 text-center">
               <div className="col-lg-8 mx-auto">
-                <h2 className="section-title">Featured Destinations</h2>
-                <p className="section-subtitle">Discover the most popular places to visit in Tamil Nadu</p>
+                <h2 className="section-title text-white">Featured Destinations</h2>
+                <p className="section-subtitle text-white">Discover the most popular places to visit in India</p>
               </div>
             </div>
             <div className="row">
@@ -73,14 +76,14 @@ const TamilNaduPlanner = ({ featuredDestinations = [], categories = [], testimon
                       <img src="sample_image.jpg" className="card-img-top" alt={`Destination ${num}`} />
                       <div className="card-body">
                         <h5 className="card-title">Sample Destination {num}</h5>
-                        <p className="card-text">Experience the beauty and culture of this amazing location in Tamil Nadu.</p>
+                        <p className="card-text">Experience the beauty and culture of this amazing location in India.</p>
                         <div className="mb-2">
                           <span className="badge bg-secondary me-1">Heritage</span>
                           <span className="badge bg-secondary me-1">Culture</span>
                         </div>
                       </div>
                       <div className="card-footer bg-white border-top-0">
-                        <a href="/destinations/sample" className="btn btn-outline-primary">
+                        <a href="/destinations/sample" className="btn btn-outline-dark">
                           Explore
                         </a>
                       </div>
@@ -90,7 +93,7 @@ const TamilNaduPlanner = ({ featuredDestinations = [], categories = [], testimon
               )}
             </div>
             <div className="text-center mt-4">
-              <a href="/destinations" className="btn btn-primary">
+              <a href="/destinations" className="btn btn-dark">
                 View All Destinations
               </a>
             </div>
@@ -102,8 +105,8 @@ const TamilNaduPlanner = ({ featuredDestinations = [], categories = [], testimon
           <div className="container">
             <div className="row mb-4 text-center">
               <div className="col-lg-8 mx-auto">
-                <h2 className="section-title">Experiences</h2>
-                <p className="section-subtitle">Choose from a variety of experiences Tamil Nadu has to offer</p>
+                <h2 className="section-title text-white">Experiences</h2>
+                <p className="section-subtitle text-white">Choose from a variety of experiences Tamil Nadu has to offer</p>
               </div>
             </div>
             <div className="row">
@@ -120,7 +123,7 @@ const TamilNaduPlanner = ({ featuredDestinations = [], categories = [], testimon
                         <p className="card-text small">{category.description}</p>
                       </div>
                       <div className="card-footer bg-white border-top-0">
-                        <a href={`/destinations?category=${category.slug}`} className="btn btn-sm btn-outline-primary">
+                        <a href={`/destinations?category=${category.slug}`} className="btn btn-sm btn-outline-dark">
                           Explore
                         </a>
                       </div>
@@ -138,10 +141,10 @@ const TamilNaduPlanner = ({ featuredDestinations = [], categories = [], testimon
                           <i className="bi bi-star fs-1"></i>
                         </div>
                         <h5 className="card-title">{cat}</h5>
-                        <p className="card-text small">Explore the amazing {cat.toLowerCase()} experiences in Tamil Nadu.</p>
+                        <p className="card-text small">Explore the amazing {cat.toLowerCase()} experiences in India.</p>
                       </div>
                       <div className="card-footer bg-white border-top-0">
-                        <a href={`/destinations?category=${cat.toLowerCase()}`} className="btn btn-sm btn-outline-primary">
+                        <a href={`/destinations?category=${cat.toLowerCase()}`} className="btn btn-sm btn-outline-dark">
                           Explore
                         </a>
                       </div>
@@ -154,12 +157,12 @@ const TamilNaduPlanner = ({ featuredDestinations = [], categories = [], testimon
         </section>
 
         {/* Testimonials */}
-        <section className="py-5 bg-light">
+        <section className="py-5 bg-tranparent" >
           <div className="container">
             <div className="row mb-4 text-center">
               <div className="col-lg-8 mx-auto">
-                <h2 className="section-title">What Travelers Say</h2>
-                <p className="section-subtitle">Experiences shared by travelers who used our itinerary planner</p>
+                <h2 className="section-title text-white">What Travelers Say</h2>
+                <p className="section-subtitle text-white">Experiences shared by travelers who used our itinerary planner</p>
               </div>
             </div>
             <div className="row">

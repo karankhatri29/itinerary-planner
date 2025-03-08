@@ -16,8 +16,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Index />} />
-          <Route path="login" element={<Login />} />
           <Route path="destinations" element={<Destinations />} />
+          <Route path="login" element={<Login />} />
           <Route path="destination/:id" element={<DestinationDetail />} />
           <Route path="form" element={<Form />} />
           <Route path="result" element={<Result />} />

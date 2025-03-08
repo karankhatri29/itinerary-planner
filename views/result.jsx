@@ -254,82 +254,75 @@ const ItineraryResult = ({ plan, onUpdate, onDelete }) => {
   
 
   return (
-    <div className="container mt-4 mb-5">
-       <div className="card shadow">
-         <div className="card-header bg-primary text-white">
-           <div className="d-flex justify-content-between align-items-center">
-             <h2>Your {updatedPlan.location || "Trip"} Itinerary</h2>
-             <div>
-                <button className="btn btn-light mx-2" onClick={handlePrint}>
-                 Print Itinerary
-               </button>
-             </div>
-           </div>
-         </div>
-        <div className="card-body" id="itinerary-print">
-          <h4>Trip Summary</h4>
-          <p><strong>Location:</strong> {updatedPlan.location || "Not specified"}</p>
-          <p><strong>Dates:</strong> {updatedPlan.startDate || "N/A"} to {updatedPlan.endDate || "N/A"}</p>
-          <p><strong>Duration:</strong> {updatedPlan.duration ? `${updatedPlan.duration} days` : "N/A"}</p>
-          <p><strong>Travelers:</strong> {updatedPlan.travelers || "N/A"}</p>
-          {/* Transport Options Display */}
-          {updatedPlan.transportOptions?.length > 0 && (
-            <>
-              <h4>Transport Options</h4>
-              {updatedPlan.transportOptions.map((transport, index) => (
-                <li key={index}>
-                  <strong>{transport.type}:</strong> ₹{transport.cost.toLocaleString()}
-                  <button className="btn btn-danger btn-sm ms-2 m-1" onClick={() => handleDeleteTransport(index)}>
-                    Delete
-                  </button>
+    <div className="container-fluid p-2">
+      <div className="card shadow-lg p-4 rounded-4 border-0">
+        <div className="card-header bg-gradient text-white rounded-top-4 p-3" style={{ background: "linear-gradient(135deg, #007bff, #0056b3)" }}>
+          <div className="d-flex justify-content-between align-items-center">
+            <h2 className="mb-0">Your {updatedPlan.location || "Trip"} Itinerary</h2>
+            <button className="btn btn-light fw-bold shadow-sm" onClick={handlePrint}>Print Itinerary</button>
+          </div>
+        </div>
 
-                </li>
-              ))}
-            </>
+        <div className="card-body p-4" id="itinerary-print">
+          <h4 className="fw-bold text-primary">Trip Summary</h4>
+          <p><strong>📍 Location:</strong> {updatedPlan.location || "Not specified"}</p>
+          <p><strong>📅 Dates:</strong> {updatedPlan.startDate || "N/A"} to {updatedPlan.endDate || "N/A"}</p>
+          <p><strong>🕒 Duration:</strong> {updatedPlan.duration ? `${updatedPlan.duration} days` : "N/A"}</p>
+          <p><strong>👥 Travelers:</strong> {updatedPlan.travelers || "N/A"}</p>
+
+          {/* Transport Options */}
+          {updatedPlan.transportOptions?.length > 0 && (
+            <div className="mt-3">
+              <h4 className="fw-bold text-primary">🚗 Transport Options</h4>
+              <ul className="list-group">
+                {updatedPlan.transportOptions.map((transport, index) => (
+                  <li key={index} className="list-group-item d-flex justify-content-between align-items-center border-0">
+                    <span><strong>{transport.type}:</strong> ₹{transport.cost.toLocaleString()}</span>
+                    <button className="btn btn-outline-danger btn-sm" onClick={() => handleDeleteTransport(index)}>Delete</button>
+                  </li>
+                ))}
+              </ul>
+            </div>
           )}
 
+          {/* Day-by-Day Itinerary */}
           {updatedPlan.dailyItinerary?.length > 0 && (
-            <>
-              <h3 className="mt-4">Your Day-by-Day Itinerary</h3>
+            <div className="mt-4">
+              <h3 className="fw-bold text-primary">📅 Your Day-by-Day Itinerary</h3>
               {updatedPlan.dailyItinerary.map((day, dayIndex) => (
-                <div className="card mb-3" key={dayIndex}>
-                  <div className="card-header bg-info text-white">
-                    <h4>Day {dayIndex + 1}: {day.date || `Day ${dayIndex + 1}`}</h4>
+                <div key={dayIndex} className="card-danger shadow-sm my-3 border-0 rounded-3">
+                  <div className="card-header bg-info text-white rounded-top-3">
+                    <h4 className="mb-0">Day {dayIndex + 1}: {day.date || `Day ${dayIndex + 1}`}</h4>
                   </div>
                   <div className="card-body">
                     {day.activities?.length > 0 ? (
                       day.activities.map((activity, activityIndex) => (
-                        <div key={activityIndex} className="d-flex justify-content-between">
+                        <div key={activityIndex} className="d-flex justify-content-between align-items-center border-bottom py-2">
                           <div>
-                            <h5>{activity.name || "Unnamed Activity"}</h5>
-                            <p>{activity.description || "No description available"}</p>
+                            <h5 className="mb-1">{activity.name || "Unnamed Activity"}</h5>
+                            <p className="mb-0 text-muted">{activity.description || "No description available"}</p>
                             {activity.cost !== undefined && (
-                              <p><strong>Cost:</strong> ₹{activity.cost.toLocaleString()}</p>
+                              <p className="text-success"><strong>Cost:</strong> ₹{activity.cost.toLocaleString()}</p>
                             )}
                           </div>
-                          <button
-                            className="btn btn-sm btn-danger m-4 mt-3 mb-5"
-                            onClick={() => handleDeleteActivity(dayIndex, activityIndex)}
-                          >
-                            Delete
-                          </button>
+                          <button className="btn btn-sm btn-outline-danger" onClick={() => handleDeleteActivity(dayIndex, activityIndex)}>Delete</button>
                         </div>
                       ))
                     ) : (
-                      <p>No activities planned for this day.</p>
+                      <p className="text-muted">No activities planned for this day.</p>
                     )}
                   </div>
                 </div>
               ))}
-            </>
+            </div>
           )}
 
           {/* Cost Breakdown */}
-          <div className="alert alert-secondary mt-4">
-            <h4>Cost Breakdown</h4>
-            <p><strong>Activity Cost:</strong> ₹{activityCost.toLocaleString()}</p>
-            <p><strong>Travelling Cost:</strong> ₹{accommodationCost.toLocaleString()}</p>
-            <h4>Total Estimated Cost: ₹{totalCost.toLocaleString()}</h4>
+          <div className="alert alert-secondary mt-4 rounded-3 shadow-sm">
+            <h4 className="fw-bold text-dark">💰 Cost Breakdown</h4>
+            <p><strong>🎭 Activity Cost:</strong> ₹{activityCost.toLocaleString()}</p>
+            <p><strong>🚕 Travelling Cost:</strong> ₹{accommodationCost.toLocaleString()}</p>
+            <h4 className="text-primary fw-bold">💵 Total Estimated Cost: ₹{totalCost.toLocaleString()}</h4>
           </div>
         </div>
       </div>

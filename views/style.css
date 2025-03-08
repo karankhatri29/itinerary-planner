@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-image.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* Destinations Section */
+.destinations {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.destinations h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.destination-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.destination-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.destination-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Categories Section */
+.categories {
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    background: #ddd;
+    padding: 15px 25px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #eee;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.testimonial-item {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item p {
+    font-style: italic;
+}
+
+
+
+
+  
