@@ -7,10 +7,7 @@ const TamilNaduPlanner = ({ featuredDestinations = [], categories = [], testimon
     <>
       {/* Hero Section */}
       <section className="hero">
-        <div className="hero-overlay">
-          
-        </div>
-        <div className="container position-relative">
+        <div className="container position-relative " style={{ zIndex: 3 }}>
           <div className="row align-items-center"><br></br>
             <div className="col-lg-12">
               <div className="hero-content text-white">

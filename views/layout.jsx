@@ -3,6 +3,7 @@ import { Outlet, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Helmet } from "react-helmet";
 import BackgroundImage from "../src/components/BackgroundImage.jsx";
+import "./style.css";
 
 
 const Layout = ({ title = "Home" }) => {
@@ -65,9 +66,12 @@ const Layout = ({ title = "Home" }) => {
 
 
       {/* Main Content - Outlet for Child Routes */}
-      <main className="container-fluid mt-4 position-relative " style={{ zIndex: 3,marginBottom :"25px" }}>
+    <div style={{ height: "100vh", overflowY: "auto" }}>
+      <main className="main container-fluid mt-4 position-relative">
         <Outlet />
       </main>
+    </div>
+
 
       {/* Footer */}
       <footer className="bg-dark text-white mt-4 py-4" style={{
@@ -77,7 +81,8 @@ const Layout = ({ title = "Home" }) => {
     width: "100%",
     position: "fixed",
     bottom: "0",
-    left: "0"
+    left: "0",
+    zIndex: "4"
 }}>  <div className="container">
     
     <div className="row mt-1">
