@@ -94,7 +94,7 @@ const ItineraryResult = ({ plan, onUpdate, onDelete }) => {
       const newAccommodationCost = updatedPlan.transportOptions?.length
       ? updatedPlan.transportOptions.reduce((sum, acc) => sum + (acc.cost || 0), 0)
       : 0;
-      const newTotalCost = newActivityCost + ((newAccommodationCost) * travelers);
+      const newTotalCost = newActivityCost + ((newAccommodationCost * travelers));
 
   
       // Open new window for printing
@@ -185,7 +185,7 @@ const ItineraryResult = ({ plan, onUpdate, onDelete }) => {
                      <ul>${transportOptions
                        .map(
                          (transport) =>
-                           `<li><strong>${transport.type}:</strong> ₹${transport.cost.toLocaleString()}</li>`
+                           `<li><strong>${transport.type}:</strong> ₹${transport.cost.toLocaleString()} per person</li>`
                        )
                        .join("")}</ul>`
                   : ""
@@ -231,7 +231,7 @@ const ItineraryResult = ({ plan, onUpdate, onDelete }) => {
               <div class="cost-breakdown">
                 <h2>Cost Breakdown</h2>
                 <p><strong>Activity Cost:</strong> ₹${newActivityCost}</p>
-                <p><strong>Traveling Cost:</strong> ₹${newAccommodationCost}</p>
+                <p><strong>Traveling Cost:</strong> ₹${newAccommodationCost} per person</p>
                 <h3>Total Estimated Cost: ₹${newTotalCost}</h3>
               </div>
             </div>
@@ -277,7 +277,7 @@ const ItineraryResult = ({ plan, onUpdate, onDelete }) => {
               <ul className="list-group">
                 {updatedPlan.transportOptions.map((transport, index) => (
                   <li key={index} className="list-group-item d-flex justify-content-between align-items-center border-0">
-                    <span><strong>{transport.type}:</strong> ₹{transport.cost.toLocaleString()}</span>
+                    <span><strong>{transport.type}:</strong> ₹{transport.cost.toLocaleString()} per person</span>
                     <button className="btn btn-outline-danger btn-sm" onClick={() => handleDeleteTransport(index)}>Delete</button>
                   </li>
                 ))}
@@ -321,8 +321,8 @@ const ItineraryResult = ({ plan, onUpdate, onDelete }) => {
           <div className="alert alert-secondary mt-4 rounded-3 shadow-sm">
             <h4 className="fw-bold text-dark">💰 Cost Breakdown</h4>
             <p><strong>🎭 Activity Cost:</strong> ₹{activityCost.toLocaleString()}</p>
-            <p><strong>🚕 Travelling Cost:</strong> ₹{accommodationCost.toLocaleString()}</p>
-            <h4 className="text-primary fw-bold">💵 Total Estimated Cost: ₹{totalCost.toLocaleString()}</h4>
+            <p><strong>🚕 Travelling Cost:</strong> ₹{accommodationCost.toLocaleString()} per person</p>
+            <h4 className="text-primary fw-bold"> Total Estimated Cost: ₹{totalCost.toLocaleString()}</h4>
           </div>
         </div>
       </div>

@@ -32,6 +32,44 @@
         "includesMeal": false
       }
     ],
+    "nature": [
+    {
+      "name": "Guindy National Park",
+      "description": "One of the largest urban national parks in India, home to a wide variety of wildlife, including spotted deer, blackbucks, and several species of birds.",
+      "cost": 0,
+      "duration": 180,
+      "rating": 4.5,
+      "bestTime": "Morning or Evening",
+      "includesMeal": false
+    },
+    {
+      "name": "Elliot's Beach (Besant Nagar Beach)",
+      "description": "A serene beach where you can enjoy the calm sea and surrounding greenery. Ideal for evening walks and peaceful moments by the shore.",
+      "cost": 0,
+      "duration": 120,
+      "rating": 4.6,
+      "bestTime": "Evening",
+      "includesMeal": false
+    },
+    {
+      "name": "Arignar Anna Zoological Park (Vandalur Zoo)",
+      "description": "One of the largest zoos in India, spread across 1,265 acres of greenery, home to a wide range of animals.",
+      "cost": 50,
+      "duration": 180,
+      "rating": 4.4,
+      "bestTime": "Morning",
+      "includesMeal": false
+    },
+    {
+      "name": "Semmozhi Poonga",
+      "description": "A beautifully maintained botanical garden in the heart of Chennai, perfect for a peaceful escape with a variety of plants and flowers.",
+      "cost": 20,
+      "duration": 120,
+      "rating": 4.3,
+      "bestTime": "Morning",
+      "includesMeal": false
+    }
+  ],
     "luxury": [
       {
         "name": "Spa at Leela Palace",
@@ -116,6 +154,579 @@
         "duration": 150,
         "rating": 4.3,
         "bestTime": "morning",
+        "includesMeal": false
+      }
+    ],
+    "businessTrip": {
+      "budgetOptions": [
+        {
+          "category": "Economy",
+          "hotel": "Ginger Hotel",
+          "flight": ["IndiGo", "SpiceJet"],
+          "train": ["Chennai Express", "Coromandel Express"],
+          "lunchHotel": "Adyar Ananda Bhavan",
+          "banquet": "Budget Conference Hall"
+        },
+        {
+          "category": "Standard",
+          "hotel": "Holiday Inn",
+          "flight": ["Vistara", "Air India"],
+          "train": ["Shatabdi Express", "Chennai Mail"],
+          "lunchHotel": "Mainland China",
+          "banquet": "Standard Business Hall"
+        },
+        {
+          "category": "Luxury",
+          "hotel": "Taj Coromandel",
+          "flight": ["Emirates", "Singapore Airlines"],
+          "train": ["Rajdhani Express", "Duronto Express"],
+          "lunchHotel": "ITC Grand Chola",
+          "banquet": "Luxury Banquet Hall"
+        }
+      ]
+    },
+    "accommodation": {
+      "flights": [
+        {"airline": "IndiGo", "price": 5500},
+        {"airline": "Air India", "price": 7000},
+        {"airline": "Vistara", "price": 6500}
+      ],
+      "trains": [
+        {"train": "Chennai Express", "price": 1200},
+        {"train": "Rajdhani Express", "price": 2500},
+        {"train": "Duronto Express", "price": 2800}
+      ],
+      "cityTransport": {
+        "rentCar": {"provider": "Zoomcar", "pricePerDay": 2000},
+        "cabService": {"provider": "Ola", "pricePerKm": 15},
+        "publicTransport": {"type": "Metro", "ticketPrice": 50}
+      }
+    }
+  },
+  {
+    "name": "Vellore",
+    "description": "Historical city known for its fort and temple",
+    "image": "vellore.jpg",
+    "adventure": [
+      {
+        "name": "Yelagiri Hills Trekking",
+        "description": "Trekking to Swamimalai Hills with panoramic views",
+        "cost": 1000,
+        "duration": 240,
+        "rating": 4.3,
+        "bestTime": "morning",
+        "includesMeal": false
+      },
+      {
+        "name": "Adventure Camp",
+        "description": "Outdoor adventure activities including zip-lining and rappelling",
+        "cost": 1500,
+        "duration": 300,
+        "rating": 4.2,
+        "bestTime": "morning",
+        "includesMeal": true
+      }
+    ],
+    "nature": [
+    {
+      "name": "Amirthi Forest Reserve",
+      "description": "A serene forest area with a rich variety of flora and fauna, including a small waterfall. Ideal for nature walks, trekking, and wildlife spotting.",
+      "cost": 0,
+      "duration": 180,
+      "rating": 4.6,
+      "bestTime": "Morning",
+      "includesMeal": false
+    },
+    {
+      "name": "Palar River",
+      "description": "A river running through the Vellore region, offering tranquil views and a peaceful natural environment. Perfect for a calm stroll along its banks.",
+      "cost": 0,
+      "duration": 120,
+      "rating": 4.2,
+      "bestTime": "Evening",
+      "includesMeal": false
+    },
+    {
+      "name": "Vellore Lake",
+      "description": "A beautiful lake surrounded by lush green areas, providing a peaceful atmosphere for picnics, boating, and relaxation.",
+      "cost": 30,
+      "duration": 120,
+      "rating": 4.4,
+      "bestTime": "Morning or Evening",
+      "includesMeal": false
+    }
+  ],
+    "luxury": [
+      {
+        "name": "Fortune Park",
+        "description": "Luxury stay and spa experience",
+        "cost": 6000,
+        "duration": 1440,
+        "rating": 4.5,
+        "bestTime": "evening",
+        "includesMeal": true
+      },
+      {
+        "name": "GRT Signature Dining",
+        "description": "Fine dining experience at GRT Grand",
+        "cost": 2500,
+        "duration": 120,
+        "rating": 4.4,
+        "bestTime": "evening",
+        "includesMeal": true
+      }
+    ],
+    "food": [
+      {
+        "name": "Vellore Biryani Tour",
+        "description": "Tasting the famous Arcot/Ambur style biryani",
+        "cost": 800,
+        "duration": 120,
+        "rating": 4.7,
+        "bestTime": "afternoon",
+        "includesMeal": true
+      },
+      {
+        "name": "Local Sweets Experience",
+        "description": "Sampling traditional Tamil sweets and snacks",
+        "cost": 500,
+        "duration": 90,
+        "rating": 4.3,
+        "bestTime": "evening",
+        "includesMeal": true
+      }
+    ],
+    "relaxation": [
+      {
+        "name": "Amirthi Forest Picnic",
+        "description": "Peaceful picnic amidst the serene Amirthi Forest",
+        "cost": 600,
+        "duration": 240,
+        "rating": 4.1,
+        "bestTime": "afternoon",
+        "includesMeal": true
+      },
+      {
+        "name": "Botanical Garden",
+        "description": "Leisure walk in the Government Botanical Garden",
+        "cost": 50,
+        "duration": 120,
+        "rating": 4.0,
+        "bestTime": "morning",
+        "includesMeal": false
+      }
+    ],
+    "cultural": [
+      {
+        "name": "Golden Temple",
+        "description": "Stunning Lakshmi temple with gold plating",
+        "cost": 0,
+        "duration": 120,
+        "rating": 4.8,
+        "bestTime": "morning",
+        "includesMeal": false
+      },
+      {
+        "name": "Vellore Fort Complex",
+        "description": "16th-century fort with a temple and museum",
+        "cost": 100,
+        "duration": 180,
+        "rating": 4.6,
+        "bestTime": "morning",
+        "includesMeal": false
+      },
+      {
+        "name": "Jalakandeswarar Temple",
+        "description": "Ancient temple inside the Vellore Fort",
+        "cost": 0,
+        "duration": 90,
+        "rating": 4.5,
+        "bestTime": "afternoon",
+        "includesMeal": false
+      }
+      
+    ],
+    "businessTrip": {
+      "budgetOptions": [
+        {
+          "category": "Economy",
+          "hotel": "Ginger Hotel",
+          "flight": ["IndiGo", "SpiceJet"],
+          "train": ["Chennai Express", "Coromandel Express"],
+          "lunchHotel": "Adyar Ananda Bhavan",
+          "banquet": "Budget Conference Hall"
+        },
+        {
+          "category": "Standard",
+          "hotel": "Holiday Inn",
+          "flight": ["Vistara", "Air India"],
+          "train": ["Shatabdi Express", "Chennai Mail"],
+          "lunchHotel": "Mainland China",
+          "banquet": "Standard Business Hall"
+        },
+        {
+          "category": "Luxury",
+          "hotel": "Taj Coromandel",
+          "flight": ["Emirates", "Singapore Airlines"],
+          "train": ["Rajdhani Express", "Duronto Express"],
+          "lunchHotel": "ITC Grand Chola",
+          "banquet": "Luxury Banquet Hall"
+        }
+      ]
+    },
+    "accommodation": {
+      "flights": [
+        {"airline": "IndiGo", "price": 5500},
+        {"airline": "Air India", "price": 7000},
+        {"airline": "Vistara", "price": 6500}
+      ],
+      "trains": [
+        {"train": "Chennai Express", "price": 1200},
+        {"train": "Rajdhani Express", "price": 2500},
+        {"train": "Duronto Express", "price": 2800}
+      ],
+      "cityTransport": {
+        "rentCar": {"provider": "Zoomcar", "pricePerDay": 2000},
+        "cabService": {"provider": "Ola", "pricePerKm": 15},
+        "publicTransport": {"type": "Metro", "ticketPrice": 50}
+      }
+    }
+  },{
+    "name": "Pondicherry",
+    "description": "A former French colony with beautiful beaches and spiritual centers",
+    "image": "pondicherry.jpg",
+    "adventure": [
+      {
+        "name": "Paradise Beach Water Sports",
+        "description": "Jet skiing, banana boat rides, and parasailing",
+        "cost": 1800,
+        "duration": 180,
+        "rating": 4.5,
+        "bestTime": "morning",
+        "includesMeal": false
+      },
+      {
+        "name": "Scuba Diving",
+        "description": "Explore underwater marine life with professional instructors",
+        "cost": 3500,
+        "duration": 240,
+        "rating": 4.7,
+        "bestTime": "morning",
+        "includesMeal": false
+      }
+    ],
+    "nature": [
+    {
+      "name": "Paradise Beach",
+      "description": "A pristine, secluded beach known for its clean sand and clear waters, ideal for relaxing, sunbathing, and enjoying the natural beauty.",
+      "cost": 100,
+      "duration": 180,
+      "rating": 4.7,
+      "bestTime": "Morning or Evening",
+      "includesMeal": false
+    },
+    {
+      "name": "Ousteri Lake",
+      "description": "A scenic lake surrounded by lush greenery, popular for bird watching and nature walks. It offers a peaceful escape from the city.",
+      "cost": 0,
+      "duration": 120,
+      "rating": 4.5,
+      "bestTime": "Morning or Evening",
+      "includesMeal": false
+    },
+    {
+      "name": "Auroville Forest",
+      "description": "A lush forest area located near Auroville, filled with indigenous trees, and perfect for nature walks, bird watching, and environmental exploration.",
+      "cost": 0,
+      "duration": 180,
+      "rating": 4.6,
+      "bestTime": "Morning",
+      "includesMeal": false
+    },
+    {
+      "name": "Chunnambar Boat House",
+      "description": "A picturesque spot near the Chunnambar River where you can enjoy boating, nature walks, and beautiful views of the river and surrounding greenery.",
+      "cost": 200,
+      "duration": 120,
+      "rating": 4.4,
+      "bestTime": "Morning or Evening",
+      "includesMeal": false
+    }
+  ],
+    "luxury": [
+      {
+        "name": "La Villa",
+        "description": "Fine dining experience at the upscale La Villa restaurant",
+        "cost": 3000,
+        "duration": 150,
+        "rating": 4.6,
+        "bestTime": "evening",
+        "includesMeal": true
+      },
+      {
+        "name": "Spa at Le Pondy",
+        "description": "Beachfront luxury spa treatments",
+        "cost": 4000,
+        "duration": 180,
+        "rating": 4.5,
+        "bestTime": "afternoon",
+        "includesMeal": false
+      }
+    ],
+    "food": [
+      {
+        "name": "French Cuisine Tour",
+        "description": "Tour of authentic French restaurants and bakeries",
+        "cost": 1500,
+        "duration": 210,
+        "rating": 4.8,
+        "bestTime": "afternoon",
+        "includesMeal": true
+      },
+      {
+        "name": "Baker Street",
+        "description": "Famous bakery known for croissants and French pastries",
+        "cost": 600,
+        "duration": 90,
+        "rating": 4.4,
+        "bestTime": "morning",
+        "includesMeal": true
+      }
+    ],
+    "relaxation": [
+      {
+        "name": "Serenity Beach",
+        "description": "Quiet beach perfect for relaxation and sunbathing",
+        "cost": 0,
+        "duration": 180,
+        "rating": 4.3,
+        "bestTime": "afternoon",
+        "includesMeal": false
+      },
+      {
+        "name": "Auroville Meditation",
+        "description": "Peaceful meditation session at the Matrimandir",
+        "cost": 0,
+        "duration": 120,
+        "rating": 4.9,
+        "bestTime": "morning",
+        "includesMeal": false
+      }
+    ],
+    "cultural": [
+      {
+        "name": "Aurobindo Ashram",
+        "description": "Spiritual center founded by Sri Aurobindo",
+        "cost": 0,
+        "duration": 120,
+        "rating": 4.6,
+        "bestTime": "morning",
+        "includesMeal": false
+      },
+      {
+        "name": "French Quarter Walking Tour",
+        "description": "Guided tour of the colonial French Quarter",
+        "cost": 1000,
+        "duration": 180,
+        "rating": 4.7,
+        "bestTime": "evening",
+        "includesMeal": false
+      },
+      {
+        "name": "Pondicherry Museum",
+        "description": "Museum with French and Indian artifacts",
+        "cost": 150,
+        "duration": 120,
+        "rating": 4.0,
+        "bestTime": "afternoon",
+        "includesMeal": false
+      }
+    ],
+    "businessTrip": {
+      "budgetOptions": [
+        {
+          "category": "Economy",
+          "hotel": "Ginger Hotel",
+          "flight": ["IndiGo", "SpiceJet"],
+          "train": ["Chennai Express", "Coromandel Express"],
+          "lunchHotel": "Adyar Ananda Bhavan",
+          "banquet": "Budget Conference Hall"
+        },
+        {
+          "category": "Standard",
+          "hotel": "Holiday Inn",
+          "flight": ["Vistara", "Air India"],
+          "train": ["Shatabdi Express", "Chennai Mail"],
+          "lunchHotel": "Mainland China",
+          "banquet": "Standard Business Hall"
+        },
+        {
+          "category": "Luxury",
+          "hotel": "Taj Coromandel",
+          "flight": ["Emirates", "Singapore Airlines"],
+          "train": ["Rajdhani Express", "Duronto Express"],
+          "lunchHotel": "ITC Grand Chola",
+          "banquet": "Luxury Banquet Hall"
+        }
+      ]
+    },
+    "accommodation": {
+      "flights": [
+        {"airline": "IndiGo", "price": 5500},
+        {"airline": "Air India", "price": 7000},
+        {"airline": "Vistara", "price": 6500}
+      ],
+      "trains": [
+        {"train": "Chennai Express", "price": 1200},
+        {"train": "Rajdhani Express", "price": 2500},
+        {"train": "Duronto Express", "price": 2800}
+      ],
+      "cityTransport": {
+        "rentCar": {"provider": "Zoomcar", "pricePerDay": 2000},
+        "cabService": {"provider": "Ola", "pricePerKm": 15},
+        "publicTransport": {"type": "Metro", "ticketPrice": 50}
+      }
+    }
+  },
+  {
+    "name": "Mahabalipuram",
+    "description": "UNESCO World Heritage site known for its stone carvings and temples",
+    "image": "mahabalipuram.jpg",
+    "adventure": [
+      {
+        "name": "Surfing at Covelong Beach",
+        "description": "Surfing lessons for beginners and intermediate surfers",
+        "cost": 2000,
+        "duration": 180,
+        "rating": 4.4,
+        "bestTime": "morning",
+        "includesMeal": false
+      },
+      {
+        "name": "Beach ATV Rides",
+        "description": "ATV rides along the coastal areas",
+        "cost": 1000,
+        "duration": 60,
+        "rating": 4.1,
+        "bestTime": "afternoon",
+        "includesMeal": false
+      }
+    ],
+    "nature": [
+    {
+      "name": "Arjuna's Penance",
+      "description": "A massive rock relief that depicts the story of the Mahabharata, surrounded by lush greenery, making it a blend of history and nature.",
+      "cost": 0,
+      "duration": 90,
+      "rating": 4.5,
+      "bestTime": "Morning",
+      "includesMeal": false
+    },
+    {
+      "name": "Kancheepuram – Mahabalipuram Road",
+      "description": "A scenic drive along this road offers views of fields, small villages, and the coast, allowing travelers to enjoy the lush green landscapes on their way to Mahabalipuram.",
+      "cost": 0,
+      "duration": 180,
+      "rating": 4.2,
+      "bestTime": "Morning",
+      "includesMeal": false
+    },
+    {
+      "name": "Mammallapuram Coastal Walk",
+      "description": "A scenic coastal walk along the shores of Mahabalipuram, where you can enjoy stunning views of the Bay of Bengal and the surrounding nature.",
+      "cost": 0,
+      "duration": 150,
+      "rating": 4.5,
+      "bestTime": "Morning or Evening",
+      "includesMeal": false
+    }
+  ],
+    "luxury": [
+      {
+        "name": "InterContinental Resort",
+        "description": "Day pass to the luxury beachfront resort with pool access",
+        "cost": 5000,
+        "duration": 300,
+        "rating": 4.7,
+        "bestTime": "afternoon",
+        "includesMeal": true
+      },
+      {
+        "name": "Sunset Beachside Dinner",
+        "description": "Private candlelight dinner by the shore",
+        "cost": 4000,
+        "duration": 150,
+        "rating": 4.8,
+        "bestTime": "evening",
+        "includesMeal": true
+      }
+    ],
+    "food": [
+      {
+        "name": "Seafood Experience",
+        "description": "Fresh seafood feast at local beachside restaurants",
+        "cost": 1200,
+        "duration": 120,
+        "rating": 4.5,
+        "bestTime": "evening",
+        "includesMeal": true
+      },
+      {
+        "name": "Othavadai Street Food Walk",
+        "description": "Exploring the diverse food options at Othavadai Street",
+        "cost": 800,
+        "duration": 150,
+        "rating": 4.3,
+        "bestTime": "evening",
+        "includesMeal": true
+      }
+    ],
+    "relaxation": [
+      {
+        "name": "Beachside Yoga",
+        "description": "Morning yoga sessions by the beach",
+        "cost": 500,
+        "duration": 90,
+        "rating": 4.6,
+        "bestTime": "morning",
+        "includesMeal": false
+      },
+      {
+        "name": "Ayurvedic Massage",
+        "description": "Traditional ayurvedic treatments and massages",
+        "cost": 2500,
+        "duration": 120,
+        "rating": 4.5,
+        "bestTime": "afternoon",
+        "includesMeal": false
+      }
+    ],
+    "cultural": [
+      {
+        "name": "Shore Temple",
+        "description": "Ancient stone temple overlooking the Bay of Bengal",
+        "cost": 600,
+        "duration": 120,
+        "rating": 4.8,
+        "bestTime": "morning",
+        "includesMeal": false
+      },
+      {
+        "name": "Arjuna's Penance",
+        "description": "Massive rock relief with intricate carvings",
+        "cost": 0,
+        "duration": 90,
+        "rating": 4.7,
+        "bestTime": "morning",
+        "includesMeal": false
+      },
+      {
+        "name": "Five Rathas",
+        "description": "Five monolithic rock temples shaped like chariots",
+        "cost": 600,
+        "duration": 120,
+        "rating": 4.6,
+        "bestTime": "afternoon",
         "includesMeal": false
       }
     ],

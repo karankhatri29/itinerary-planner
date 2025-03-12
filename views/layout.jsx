@@ -88,7 +88,7 @@ const Layout = ({ title = "Home" }) => {
     <div className="row mt-1">
       <div className="col-12 text-center">
         <p className="mb-0">
-          &copy; {new Date().getFullYear()} Tamil Nadu Itinerary Planner. All rights reserved.
+          &copy; {new Date().getFullYear()} WanderSync Itinerary Planner. All rights reserved.
         </p>
       </div>
     </div>

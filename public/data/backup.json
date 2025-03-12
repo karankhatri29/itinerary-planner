@@ -32,6 +32,44 @@
           "includesMeal": false
         }
       ],
+      "nature": [
+    {
+      "name": "Guindy National Park",
+      "description": "One of the largest urban national parks in India, home to a wide variety of wildlife, including spotted deer, blackbucks, and several species of birds.",
+      "cost": 0,
+      "duration": 180,
+      "rating": 4.5,
+      "bestTime": "Morning or Evening",
+      "includesMeal": false
+    },
+    {
+      "name": "Elliot's Beach (Besant Nagar Beach)",
+      "description": "A serene beach where you can enjoy the calm sea and surrounding greenery. Ideal for evening walks and peaceful moments by the shore.",
+      "cost": 0,
+      "duration": 120,
+      "rating": 4.6,
+      "bestTime": "Evening",
+      "includesMeal": false
+    },
+    {
+      "name": "Arignar Anna Zoological Park (Vandalur Zoo)",
+      "description": "One of the largest zoos in India, spread across 1,265 acres of greenery, home to a wide range of animals.",
+      "cost": 50,
+      "duration": 180,
+      "rating": 4.4,
+      "bestTime": "Morning",
+      "includesMeal": false
+    },
+    {
+      "name": "Semmozhi Poonga",
+      "description": "A beautifully maintained botanical garden in the heart of Chennai, perfect for a peaceful escape with a variety of plants and flowers.",
+      "cost": 20,
+      "duration": 120,
+      "rating": 4.3,
+      "bestTime": "Morning",
+      "includesMeal": false
+    }
+  ],
       "luxury": [
         {
           "name": "Spa at Leela Palace",
