@@ -1,8 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import jsonData from "../public/data/locations.json";
 import { Outlet } from "react-router-dom";
 import "./style.css";
 
-const TamilNaduPlanner = ({ featuredDestinations = [], categories = [], testimonials = [] }) => {
+const TamilNaduPlanner = ({ featuredDestinations = ["chennai", "vellore", "pondicherry"], categories = [], testimonials = [] }) => {
+
+
+  const [destinations, setDestinations] = useState([""]);
+
+  useEffect(() => {
+    // Prevent re-renders by using a function that checks if state already contains the filtered data
+    setDestinations((prev) => {
+      const filteredData = jsonData.filter((loc) =>
+        featuredDestinations.includes(loc.name.toLowerCase())
+      );
+      // Only update state if the data is actually different
+      return JSON.stringify(prev) === JSON.stringify(filteredData) ? prev : filteredData;
+    });
+  }, [featuredDestinations]);
+
   return (
     <>
       {/* Hero Section */}
@@ -12,6 +28,7 @@ const TamilNaduPlanner = ({ featuredDestinations = [], categories = [], testimon
             <div className="col-lg-12">
               <div className="hero-content text-white">
                 <h1 className="display-4 fw-bold mb-4">Discover the Wonders of India</h1>
+                <h1 className="display-4 fw-bold mb-4">with WanderSync.</h1>
                 <p className="lead mb-4">
                   Create your perfect itinerary for exploring Inida's rich culture, heritage, and natural beauty.
                 </p>
@@ -28,7 +45,7 @@ const TamilNaduPlanner = ({ featuredDestinations = [], categories = [], testimon
           </div>
         </div>
       </section>
-      
+
       {/* Main Content */}
       <main>
         {/* Featured Destinations */}
@@ -41,14 +58,22 @@ const TamilNaduPlanner = ({ featuredDestinations = [], categories = [], testimon
               </div>
             </div>
             <div className="row">
-              {featuredDestinations?.length > 0 ? (
-                featuredDestinations.map((destination) => (
+              {destinations?.length > 0 ? (
+                destinations.map((destination) => (
                   <div className="col-md-4 mb-4" key={destination.id}>
-                    <div className="card destination-card h-100">
-                      <img src={destination.imageUrl || "sample_image.jpg"} className="card-img-top" alt={destination.name} />
-                      <div className="card-body">
-                        <h5 className="card-title">{destination.name}</h5>
-                        <p className="card-text">{destination.shortDescription}</p>
+                    <div className="card destination-card h-100 p-2" style={{background: "rgba(255, 255, 255, 0.7)" }}>
+                      <div className="card-body" style={{
+                        backgroundImage: `url(${destination.image})`,
+                        backgroundSize: "cover", // Ensures the image covers the entire div
+                        backgroundPosition: "center", // Centers the image
+                        backgroundRepeat: "no-repeat", // Prevents repeating
+                        height: "300px", // Adjust height as needed
+                      }}>
+                        <div className="position-absolute top-0 end-0 m-3" style={{margin:'3px'}}>
+                        <span className="badge bg-danger rounded-pill">Featured</span>
+                        </div>
+                        <h5 className="card-title text-white"><b>{destination.name}</b></h5>
+                        <p className="card-text">{destination.description}</p>
                         <div className="mb-2">
                           {destination.categories?.slice(0, 3).map((category, index) => (
                             <span className="badge bg-secondary me-1" key={index}>
@@ -57,8 +82,8 @@ const TamilNaduPlanner = ({ featuredDestinations = [], categories = [], testimon
                           ))}
                         </div>
                       </div>
-                      <div className="card-footer bg-white border-top-0">
-                        <a href={`/destinations/${destination.id}`} className="btn btn-outline-primary">
+                      <div className="card-footer  border-top-0">
+                        <a href="/hotels" className="btn btn-outline-dark">
                           Explore
                         </a>
                       </div>
@@ -185,8 +210,8 @@ const TamilNaduPlanner = ({ featuredDestinations = [], categories = [], testimon
                                       <div className="rating text-warning">
                                         {testimonial.rating
                                           ? [...Array(testimonial.rating)].map((_, i) => (
-                                              <i className="bi bi-star-fill" key={i}></i>
-                                            ))
+                                            <i className="bi bi-star-fill" key={i}></i>
+                                          ))
                                           : "No ratings yet"}
                                       </div>
                                     </div>

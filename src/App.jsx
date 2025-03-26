@@ -8,6 +8,8 @@ import DestinationDetail from '../views/destination-detail.jsx';
 import Form from '../views/form.jsx';
 import Result from '../views/result.jsx';
 import Error from '../views/error.jsx';
+import AboutUs from '../views/about-us.jsx';
+import Hotels from '../views/hotel-view.jsx';
 import './App.css';
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
           <Route path="destination/:id" element={<DestinationDetail />} />
           <Route path="form" element={<Form />} />
           <Route path="result" element={<Result />} />
+          <Route path="about" element={<AboutUs />} />
+          <Route path="hotels" element={<Hotels />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>

@@ -1,0 +1,1257 @@
+[
+{
+    "city": "Chennai",
+    "hotels": {
+      "budget": [
+        {
+          "name": "Hotel Peace Inn",
+          "checkin_time": "12:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Free Wi-Fi", "Air Conditioning", "24/7 Front Desk"],
+          "image": "https://example.com/hotel_peace_inn.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Hotel+Peace+Inn+Chennai",
+          "rooms": [
+            {
+              "type": "Standard Room",
+              "fare_per_night": 1200,
+              "max_guests": 2
+            },
+            {
+              "type": "Deluxe Room",
+              "fare_per_night": 1800,
+              "max_guests": 2
+            }
+          ],
+          "contact": "+91 9876543210",
+          "ratings": 3.5
+        },
+        {
+          "name": "Emarald Hotel",
+          "checkin_time": "11:30 AM",
+          "breakfast_provided": false,
+          "amenities": ["Free Parking", "Laundry Service", "24/7 Front Desk"],
+          "image": "https://example.com/emarald_hotel.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Emarald+Hotel+Chennai",
+          "rooms": [
+            {
+              "type": "Economy Room",
+              "fare_per_night": 1400,
+              "max_guests": 2
+            },
+            {
+              "type": "Standard Room",
+              "fare_per_night": 2000,
+              "max_guests": 3
+            }
+          ],
+          "contact": "+91 9123456789",
+          "ratings": 3.7
+        },
+        {
+          "name": "Hotel Crescent Park",
+          "checkin_time": "1:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Free Wi-Fi", "Air Conditioning", "Room Service"],
+          "image": "https://example.com/hotel_crescent_park.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Hotel+Crescent+Park+Chennai",
+          "rooms": [
+            {
+              "type": "Standard Room",
+              "fare_per_night": 1600,
+              "max_guests": 2
+            },
+            {
+              "type": "Family Room",
+              "fare_per_night": 2200,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9000000000",
+          "ratings": 3.9
+        }
+      ],
+      "standard": [
+        {
+          "name": "The Iris Hotel",
+          "checkin_time": "12:30 PM",
+          "breakfast_provided": true,
+          "amenities": ["Free Wi-Fi", "Gym", "Restaurant", "Parking"],
+          "image": "https://example.com/the_iris_hotel.jpg",
+          "google_maps_url": "https://maps.google.com/?q=The+Iris+Hotel+Chennai",
+          "rooms": [
+            {
+              "type": "Executive Room",
+              "fare_per_night": 3500,
+              "max_guests": 2
+            },
+            {
+              "type": "Suite",
+              "fare_per_night": 5000,
+              "max_guests": 3
+            }
+          ],
+          "contact": "+91 9812345678",
+          "ratings": 4.2
+        },
+        {
+          "name": "E Hotel",
+          "checkin_time": "1:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Free Parking", "Gym", "Conference Room"],
+          "image": "https://example.com/e_hotel.jpg",
+          "google_maps_url": "https://maps.google.com/?q=E+Hotel+Chennai",
+          "rooms": [
+            {
+              "type": "Superior Room",
+              "fare_per_night": 4000,
+              "max_guests": 2
+            },
+            {
+              "type": "Premium Suite",
+              "fare_per_night": 6000,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9823456789",
+          "ratings": 4.3
+        },
+        {
+          "name": "Hotel Green Park",
+          "checkin_time": "2:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Swimming Pool", "Spa", "Bar"],
+          "image": "https://example.com/hotel_green_park.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Hotel+Green+Park+Chennai",
+          "rooms": [
+            {
+              "type": "Executive Room",
+              "fare_per_night": 4500,
+              "max_guests": 2
+            },
+            {
+              "type": "Deluxe Suite",
+              "fare_per_night": 7000,
+              "max_guests": 3
+            }
+          ],
+          "contact": "+91 9834567890",
+          "ratings": 4.5
+        }
+      ],
+      "luxury": [
+        {
+          "name": "ITC Grand Chola",
+          "checkin_time": "3:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Infinity Pool", "Spa", "Fine Dining", "Personal Butler"],
+          "image": "https://example.com/itc_grand_chola.jpg",
+          "google_maps_url": "https://maps.google.com/?q=ITC+Grand+Chola+Chennai",
+          "rooms": [
+            {
+              "type": "Luxury Room",
+              "fare_per_night": 12000,
+              "max_guests": 2
+            },
+            {
+              "type": "Presidential Suite",
+              "fare_per_night": 25000,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9845678901",
+          "ratings": 4.8
+        },
+        {
+          "name": "The Leela Palace",
+          "checkin_time": "2:30 PM",
+          "breakfast_provided": true,
+          "amenities": ["Ocean View", "Private Pool", "Luxury Spa"],
+          "image": "https://example.com/the_leela_palace.jpg",
+          "google_maps_url": "https://maps.google.com/?q=The+Leela+Palace+Chennai",
+          "rooms": [
+            {
+              "type": "Grande Room",
+              "fare_per_night": 18000,
+              "max_guests": 2
+            },
+            {
+              "type": "Royal Suite",
+              "fare_per_night": 35000,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9856789012",
+          "ratings": 4.9
+        },
+        {
+          "name": "Taj Coromandel",
+          "checkin_time": "1:30 PM",
+          "breakfast_provided": true,
+          "amenities": ["Fine Dining", "Private Chauffeur", "Spa"],
+          "image": "https://example.com/taj_coromandel.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Taj+Coromandel+Chennai",
+          "rooms": [
+            {
+              "type": "Luxury Suite",
+              "fare_per_night": 20000,
+              "max_guests": 2
+            },
+            {
+              "type": "Presidential Suite",
+              "fare_per_night": 40000,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9867890123",
+          "ratings": 4.7
+        }
+      ]
+    }
+  },
+  {
+    "city": "Vellore",
+    "hotels": {
+      "budget": [
+        {
+          "name": "Hotel Surabi International",
+          "image":"src/components/images/hotel-imgs/surabhi-international.png",
+          "checkin_time": "12:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Free Wi-Fi", "24/7 Front Desk", "Air Conditioning"],
+          "google_maps_url": "https://maps.google.com/?q=Hotel+Surabi+International+Vellore",
+          "rooms": [
+            {
+              "type": "Standard Room",
+              "fare_per_night": 1200,
+              "max_guests": 2
+            },
+            {
+              "type": "Deluxe Room",
+              "fare_per_night": 1800,
+              "max_guests": 2
+            }
+          ],
+          "contact": "+91 9876543210",
+          "ratings": 3.6
+        },
+        {
+          "name": "Hotel Palm Tree",
+          "checkin_time": "11:30 AM",
+          "breakfast_provided": false,
+          "amenities": ["Free Parking", "Laundry Service", "Room Service"],
+          "image": "https://example.com/hotel_palm_tree.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Hotel+Palm+Tree+Vellore",
+          "rooms": [
+            {
+              "type": "Economy Room",
+              "fare_per_night": 1400,
+              "max_guests": 2
+            },
+            {
+              "type": "Standard Room",
+              "fare_per_night": 2000,
+              "max_guests": 3
+            }
+          ],
+          "contact": "+91 9123456789",
+          "ratings": 3.8
+        },
+        {
+          "name": "Hotel Aavanaa Inn",
+          "checkin_time": "1:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Free Wi-Fi", "Air Conditioning", "Restaurant"],
+          "image": "https://example.com/hotel_aavanaa_inn.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Hotel+Aavanaa+Inn+Vellore",
+          "rooms": [
+            {
+              "type": "Standard Room",
+              "fare_per_night": 1600,
+              "max_guests": 2
+            },
+            {
+              "type": "Family Room",
+              "fare_per_night": 2200,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9000000000",
+          "ratings": 3.9
+        }
+      ],
+      "standard": [
+        {
+          "name": "Khanna Fiesta",
+          "checkin_time": "12:30 PM",
+          "breakfast_provided": true,
+          "amenities": ["Free Wi-Fi", "Gym", "Restaurant", "Parking"],
+          "image": "https://example.com/khanna_fiesta.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Khanna+Fiesta+Vellore",
+          "rooms": [
+            {
+              "type": "Executive Room",
+              "fare_per_night": 3500,
+              "max_guests": 2
+            },
+            {
+              "type": "Suite",
+              "fare_per_night": 5000,
+              "max_guests": 3
+            }
+          ],
+          "contact": "+91 9812345678",
+          "ratings": 4.2
+        },
+        {
+          "name": "Regency Sameera Vellore",
+          "checkin_time": "1:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Free Parking", "Gym", "Conference Room"],
+          "image": "https://example.com/regency_sameera.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Regency+Sameera+Vellore",
+          "rooms": [
+            {
+              "type": "Superior Room",
+              "fare_per_night": 4000,
+              "max_guests": 2
+            },
+            {
+              "type": "Premium Suite",
+              "fare_per_night": 6000,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9823456789",
+          "ratings": 4.3
+        },
+        {
+          "name": "Grand Krishna Hotel",
+          "checkin_time": "2:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Swimming Pool", "Spa", "Bar"],
+          "image": "https://example.com/grand_krishna.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Grand+Krishna+Hotel+Vellore",
+          "rooms": [
+            {
+              "type": "Executive Room",
+              "fare_per_night": 4500,
+              "max_guests": 2
+            },
+            {
+              "type": "Deluxe Suite",
+              "fare_per_night": 7000,
+              "max_guests": 3
+            }
+          ],
+          "contact": "+91 9834567890",
+          "ratings": 4.5
+        }
+      ],
+      "luxury": [
+        {
+          "name": "Fortune Park Vellore",
+          "checkin_time": "3:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Infinity Pool", "Spa", "Fine Dining", "Personal Butler"],
+          "image": "https://example.com/fortune_park.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Fortune+Park+Vellore",
+          "rooms": [
+            {
+              "type": "Luxury Room",
+              "fare_per_night": 12000,
+              "max_guests": 2
+            },
+            {
+              "type": "Presidential Suite",
+              "fare_per_night": 25000,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9845678901",
+          "ratings": 4.8
+        },
+        {
+          "name": "Hotel Benzz Park",
+          "checkin_time": "2:30 PM",
+          "breakfast_provided": true,
+          "amenities": ["Ocean View", "Private Pool", "Luxury Spa"],
+          "image": "https://example.com/benzz_park.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Hotel+Benzz+Park+Vellore",
+          "rooms": [
+            {
+              "type": "Grande Room",
+              "fare_per_night": 18000,
+              "max_guests": 2
+            },
+            {
+              "type": "Royal Suite",
+              "fare_per_night": 35000,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9856789012",
+          "ratings": 4.9
+        },
+        {
+          "name": "Ginger Hotel Vellore",
+          "checkin_time": "1:30 PM",
+          "breakfast_provided": true,
+          "amenities": ["Fine Dining", "Private Chauffeur", "Spa"],
+          "image": "https://example.com/ginger_hotel.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Ginger+Hotel+Vellore",
+          "rooms": [
+            {
+              "type": "Luxury Suite",
+              "fare_per_night": 20000,
+              "max_guests": 2
+            },
+            {
+              "type": "Presidential Suite",
+              "fare_per_night": 40000,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9867890123",
+          "ratings": 4.7
+        }
+      ]
+    }
+  },
+  {
+    "city": "Pondicherry",
+    "hotels": {
+      "budget": [
+        {
+          "name": "Hotel Coramandal Heritage",
+          "checkin_time": "12:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Free Wi-Fi", "Air Conditioning", "24/7 Front Desk"],
+          "image": "https://example.com/coramandal_heritage.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Hotel+Coramandal+Heritage+Pondicherry",
+          "rooms": [
+            {
+              "type": "Standard Room",
+              "fare_per_night": 1300,
+              "max_guests": 2
+            },
+            {
+              "type": "Deluxe Room",
+              "fare_per_night": 1700,
+              "max_guests": 2
+            }
+          ],
+          "contact": "+91 9876543210",
+          "ratings": 3.8
+        },
+        {
+          "name": "Le Mirage",
+          "checkin_time": "11:00 AM",
+          "breakfast_provided": false,
+          "amenities": ["Free Parking", "Laundry Service", "Room Service"],
+          "image": "https://example.com/le_mirage.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Le+Mirage+Pondicherry",
+          "rooms": [
+            {
+              "type": "Economy Room",
+              "fare_per_night": 1500,
+              "max_guests": 2
+            },
+            {
+              "type": "Superior Room",
+              "fare_per_night": 2000,
+              "max_guests": 3
+            }
+          ],
+          "contact": "+91 9123456789",
+          "ratings": 4.0
+        },
+        {
+          "name": "Lotus Bay View Hotel",
+          "checkin_time": "1:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Sea View", "Free Wi-Fi", "Restaurant"],
+          "image": "https://example.com/lotus_bay_view.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Lotus+Bay+View+Hotel+Pondicherry",
+          "rooms": [
+            {
+              "type": "Standard Room",
+              "fare_per_night": 1600,
+              "max_guests": 2
+            },
+            {
+              "type": "Family Room",
+              "fare_per_night": 2500,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9000000000",
+          "ratings": 3.9
+        }
+      ],
+      "standard": [
+        {
+          "name": "Hotel Atithi",
+          "checkin_time": "12:30 PM",
+          "breakfast_provided": true,
+          "amenities": ["Free Wi-Fi", "Swimming Pool", "Gym", "Restaurant"],
+          "image": "https://example.com/hotel_atithi.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Hotel+Atithi+Pondicherry",
+          "rooms": [
+            {
+              "type": "Executive Room",
+              "fare_per_night": 4500,
+              "max_guests": 2
+            },
+            {
+              "type": "Suite",
+              "fare_per_night": 6500,
+              "max_guests": 3
+            }
+          ],
+          "contact": "+91 9812345678",
+          "ratings": 4.2
+        },
+        {
+          "name": "Anandha Inn",
+          "checkin_time": "1:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Conference Room", "Parking", "Gym"],
+          "image": "https://example.com/anandha_inn.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Anandha+Inn+Pondicherry",
+          "rooms": [
+            {
+              "type": "Superior Room",
+              "fare_per_night": 5000,
+              "max_guests": 2
+            },
+            {
+              "type": "Premium Suite",
+              "fare_per_night": 7000,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9823456789",
+          "ratings": 4.3
+        },
+        {
+          "name": "Shenbaga Hotel & Convention Centre",
+          "checkin_time": "2:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Swimming Pool", "Spa", "Bar"],
+          "image": "https://example.com/shenbaga_hotel.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Shenbaga+Hotel+Pondicherry",
+          "rooms": [
+            {
+              "type": "Executive Room",
+              "fare_per_night": 5500,
+              "max_guests": 2
+            },
+            {
+              "type": "Deluxe Suite",
+              "fare_per_night": 8000,
+              "max_guests": 3
+            }
+          ],
+          "contact": "+91 9834567890",
+          "ratings": 4.5
+        }
+      ],
+      "luxury": [
+        {
+          "name": "Le Pondy Resort",
+          "checkin_time": "3:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Private Beach", "Spa", "Fine Dining", "Yoga Sessions"],
+          "image": "https://example.com/le_pondy.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Le+Pondy+Resort+Pondicherry",
+          "rooms": [
+            {
+              "type": "Luxury Room",
+              "fare_per_night": 15000,
+              "max_guests": 2
+            },
+            {
+              "type": "Presidential Suite",
+              "fare_per_night": 28000,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9845678901",
+          "ratings": 4.8
+        },
+        {
+          "name": "The Promenade",
+          "checkin_time": "2:30 PM",
+          "breakfast_provided": true,
+          "amenities": ["Seaside View", "Private Pool", "Luxury Spa"],
+          "image": "https://example.com/the_promenade.jpg",
+          "google_maps_url": "https://maps.google.com/?q=The+Promenade+Pondicherry",
+          "rooms": [
+            {
+              "type": "Grande Room",
+              "fare_per_night": 17000,
+              "max_guests": 2
+            },
+            {
+              "type": "Royal Suite",
+              "fare_per_night": 32000,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9856789012",
+          "ratings": 4.9
+        },
+        {
+          "name": "Accord Puducherry",
+          "checkin_time": "1:30 PM",
+          "breakfast_provided": true,
+          "amenities": ["Fine Dining", "Private Chauffeur", "Wellness Spa"],
+          "image": "https://example.com/accord_puducherry.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Accord+Puducherry",
+          "rooms": [
+            {
+              "type": "Luxury Suite",
+              "fare_per_night": 18000,
+              "max_guests": 2
+            },
+            {
+              "type": "Presidential Suite",
+              "fare_per_night": 35000,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9867890123",
+          "ratings": 4.7
+        }
+      ]
+    }
+  },
+  {
+    "city": "Mahabalipuram",
+    "hotels": {
+      "budget": [
+        {
+          "name": "Hotel Mamalla Inn",
+          "checkin_time": "12:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Free Wi-Fi", "Air Conditioning", "24/7 Front Desk"],
+          "image": "https://example.com/mamalla_inn.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Hotel+Mamalla+Inn+Mahabalipuram",
+          "rooms": [
+            {
+              "type": "Standard Room",
+              "fare_per_night": 1200,
+              "max_guests": 2
+            },
+            {
+              "type": "Deluxe Room",
+              "fare_per_night": 1600,
+              "max_guests": 2
+            }
+          ],
+          "contact": "+91 9876543211",
+          "ratings": 3.8
+        },
+        {
+          "name": "Sri Murugan Guest House",
+          "checkin_time": "11:00 AM",
+          "breakfast_provided": false,
+          "amenities": ["Free Parking", "Laundry Service", "Garden View"],
+          "image": "https://example.com/murugan_guesthouse.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Sri+Murugan+Guest+House+Mahabalipuram",
+          "rooms": [
+            {
+              "type": "Economy Room",
+              "fare_per_night": 1000,
+              "max_guests": 2
+            },
+            {
+              "type": "Superior Room",
+              "fare_per_night": 1500,
+              "max_guests": 3
+            }
+          ],
+          "contact": "+91 9123456788",
+          "ratings": 3.9
+        },
+        {
+          "name": "Blue Moon Guest House",
+          "checkin_time": "1:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Free Wi-Fi", "Beach Access", "Restaurant"],
+          "image": "https://example.com/blue_moon_guesthouse.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Blue+Moon+Guest+House+Mahabalipuram",
+          "rooms": [
+            {
+              "type": "Standard Room",
+              "fare_per_night": 1300,
+              "max_guests": 2
+            },
+            {
+              "type": "Family Room",
+              "fare_per_night": 2000,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9000000001",
+          "ratings": 3.7
+        }
+      ],
+      "standard": [
+        {
+          "name": "Hotel Sea Breeze",
+          "checkin_time": "12:30 PM",
+          "breakfast_provided": true,
+          "amenities": ["Free Wi-Fi", "Swimming Pool", "Restaurant", "Sea View"],
+          "image": "https://example.com/sea_breeze.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Hotel+Sea+Breeze+Mahabalipuram",
+          "rooms": [
+            {
+              "type": "Executive Room",
+              "fare_per_night": 4000,
+              "max_guests": 2
+            },
+            {
+              "type": "Suite",
+              "fare_per_night": 6000,
+              "max_guests": 3
+            }
+          ],
+          "contact": "+91 9812345677",
+          "ratings": 4.2
+        },
+        {
+          "name": "Grande Bay Resort & Spa",
+          "checkin_time": "1:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Conference Room", "Gym", "Swimming Pool"],
+          "image": "https://example.com/grande_bay.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Grande+Bay+Resort+Mahabalipuram",
+          "rooms": [
+            {
+              "type": "Superior Room",
+              "fare_per_night": 5000,
+              "max_guests": 2
+            },
+            {
+              "type": "Premium Suite",
+              "fare_per_night": 7500,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9823456788",
+          "ratings": 4.4
+        },
+        {
+          "name": "Mamalla Beach Resort",
+          "checkin_time": "2:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Private Beach", "Swimming Pool", "Bar"],
+          "image": "https://example.com/mamalla_beach.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Mamalla+Beach+Resort+Mahabalipuram",
+          "rooms": [
+            {
+              "type": "Executive Room",
+              "fare_per_night": 5500,
+              "max_guests": 2
+            },
+            {
+              "type": "Deluxe Suite",
+              "fare_per_night": 8000,
+              "max_guests": 3
+            }
+          ],
+          "contact": "+91 9834567891",
+          "ratings": 4.5
+        }
+      ],
+      "luxury": [
+        {
+          "name": "Radisson Blu Resort Temple Bay",
+          "checkin_time": "3:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Private Beach", "Infinity Pool", "Spa", "Luxury Dining"],
+          "image": "https://example.com/radisson_blu.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Radisson+Blu+Mahabalipuram",
+          "rooms": [
+            {
+              "type": "Luxury Room",
+              "fare_per_night": 15000,
+              "max_guests": 2
+            },
+            {
+              "type": "Presidential Suite",
+              "fare_per_night": 28000,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9845678902",
+          "ratings": 4.8
+        },
+        {
+          "name": "InterContinental Chennai Mahabalipuram Resort",
+          "checkin_time": "2:30 PM",
+          "breakfast_provided": true,
+          "amenities": ["Seaside View", "Private Villas", "Luxury Spa"],
+          "image": "https://example.com/intercontinental_chennai.jpg",
+          "google_maps_url": "https://maps.google.com/?q=InterContinental+Chennai+Mahabalipuram",
+          "rooms": [
+            {
+              "type": "Grande Room",
+              "fare_per_night": 18000,
+              "max_guests": 2
+            },
+            {
+              "type": "Royal Suite",
+              "fare_per_night": 32000,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9856789013",
+          "ratings": 4.9
+        },
+        {
+          "name": "Taj Fisherman’s Cove Resort & Spa",
+          "checkin_time": "1:30 PM",
+          "breakfast_provided": true,
+          "amenities": ["Fine Dining", "Luxury Cottages", "Private Chauffeur"],
+          "image": "https://example.com/taj_fishermans_cove.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Taj+Fishermans+Cove+Mahabalipuram",
+          "rooms": [
+            {
+              "type": "Luxury Suite",
+              "fare_per_night": 20000,
+              "max_guests": 2
+            },
+            {
+              "type": "Presidential Suite",
+              "fare_per_night": 35000,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9867890124",
+          "ratings": 4.7
+        }
+      ]
+    }
+  },
+  {
+    "city": "Ooty",
+    "hotels": {
+      "budget": [
+        {
+          "name": "Hotel Sapphire Grand",
+          "checkin_time": "12:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Free Wi-Fi", "Air Conditioning", "24/7 Front Desk"],
+          "image": "https://example.com/hotel_sapphire_grand.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Hotel+Sapphire+Grand+Ooty",
+          "rooms": [
+            {
+              "type": "Standard Room",
+              "fare_per_night": 1400,
+              "max_guests": 2
+            },
+            {
+              "type": "Deluxe Room",
+              "fare_per_night": 1800,
+              "max_guests": 2
+            }
+          ],
+          "contact": "+91 9876543211",
+          "ratings": 3.7
+        },
+        {
+          "name": "The Majestic Crown",
+          "checkin_time": "11:30 AM",
+          "breakfast_provided": false,
+          "amenities": ["Free Parking", "Room Heater", "Garden View"],
+          "image": "https://example.com/majestic_crown.jpg",
+          "google_maps_url": "https://maps.google.com/?q=The+Majestic+Crown+Ooty",
+          "rooms": [
+            {
+              "type": "Economy Room",
+              "fare_per_night": 1500,
+              "max_guests": 2
+            },
+            {
+              "type": "Superior Room",
+              "fare_per_night": 2000,
+              "max_guests": 3
+            }
+          ],
+          "contact": "+91 9123456788",
+          "ratings": 3.8
+        },
+        {
+          "name": "Ponmari Residency",
+          "checkin_time": "1:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Free Wi-Fi", "Restaurant", "Tour Desk"],
+          "image": "https://example.com/ponmari_residency.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Ponmari+Residency+Ooty",
+          "rooms": [
+            {
+              "type": "Standard Room",
+              "fare_per_night": 1600,
+              "max_guests": 2
+            },
+            {
+              "type": "Family Room",
+              "fare_per_night": 2500,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9000000001",
+          "ratings": 3.9
+        }
+      ],
+      "standard": [
+        {
+          "name": "Astoria Residency",
+          "checkin_time": "12:30 PM",
+          "breakfast_provided": true,
+          "amenities": ["Free Wi-Fi", "Gym", "Restaurant", "Parking"],
+          "image": "https://example.com/astoria_residency.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Astoria+Residency+Ooty",
+          "rooms": [
+            {
+              "type": "Executive Room",
+              "fare_per_night": 4500,
+              "max_guests": 2
+            },
+            {
+              "type": "Suite",
+              "fare_per_night": 6000,
+              "max_guests": 3
+            }
+          ],
+          "contact": "+91 9812345677",
+          "ratings": 4.2
+        },
+        {
+          "name": "Sterling Ooty Elk Hill",
+          "checkin_time": "1:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Spa", "Gym", "Children’s Play Area"],
+          "image": "https://example.com/sterling_elk_hill.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Sterling+Ooty+Elk+Hill",
+          "rooms": [
+            {
+              "type": "Superior Room",
+              "fare_per_night": 5000,
+              "max_guests": 2
+            },
+            {
+              "type": "Premium Suite",
+              "fare_per_night": 7000,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9823456788",
+          "ratings": 4.3
+        },
+        {
+          "name": "Meadows Residency",
+          "checkin_time": "2:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Garden View", "Restaurant", "Tour Desk"],
+          "image": "https://example.com/meadows_residency.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Meadows+Residency+Ooty",
+          "rooms": [
+            {
+              "type": "Executive Room",
+              "fare_per_night": 5500,
+              "max_guests": 2
+            },
+            {
+              "type": "Deluxe Suite",
+              "fare_per_night": 8000,
+              "max_guests": 3
+            }
+          ],
+          "contact": "+91 9834567891",
+          "ratings": 4.5
+        }
+      ],
+      "luxury": [
+        {
+          "name": "Savoy - IHCL SeleQtions",
+          "checkin_time": "3:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Colonial-style Cottages", "Fine Dining", "Luxury Spa"],
+          "image": "https://example.com/savoy_ihcl.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Savoy+IHCL+Ooty",
+          "rooms": [
+            {
+              "type": "Luxury Room",
+              "fare_per_night": 15000,
+              "max_guests": 2
+            },
+            {
+              "type": "Presidential Suite",
+              "fare_per_night": 28000,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9845678902",
+          "ratings": 4.8
+        },
+        {
+          "name": "Gem Park Ooty",
+          "checkin_time": "2:30 PM",
+          "breakfast_provided": true,
+          "amenities": ["Mountain View", "Indoor Pool", "Luxury Spa"],
+          "image": "https://example.com/gem_park.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Gem+Park+Ooty",
+          "rooms": [
+            {
+              "type": "Grande Room",
+              "fare_per_night": 18000,
+              "max_guests": 2
+            },
+            {
+              "type": "Royal Suite",
+              "fare_per_night": 32000,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9856789013",
+          "ratings": 4.9
+        },
+        {
+          "name": "Accord Highland Hotel Ooty",
+          "checkin_time": "1:30 PM",
+          "breakfast_provided": true,
+          "amenities": ["Luxury Suites", "Fine Dining", "Private Chauffeur"],
+          "image": "https://example.com/accord_highland.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Accord+Highland+Hotel+Ooty",
+          "rooms": [
+            {
+              "type": "Luxury Suite",
+              "fare_per_night": 20000,
+              "max_guests": 2
+            },
+            {
+              "type": "Presidential Suite",
+              "fare_per_night": 35000,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9867890124",
+          "ratings": 4.7
+        }
+      ]
+    }
+  },
+  {
+    "city": "Kanyakumari",
+    "hotels": {
+      "budget": [
+        {
+          "name": "Hotel Seashore",
+          "checkin_time": "12:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Free Wi-Fi", "Air Conditioning", "24/7 Front Desk"],
+          "image": "https://example.com/hotel_seashore.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Hotel+Seashore+Kanyakumari",
+          "rooms": [
+            {
+              "type": "Standard Room",
+              "fare_per_night": 1200,
+              "max_guests": 2
+            },
+            {
+              "type": "Deluxe Room",
+              "fare_per_night": 1600,
+              "max_guests": 3
+            }
+          ],
+          "contact": "+91 9876543201",
+          "ratings": 3.6
+        },
+        {
+          "name": "Hotel Sun Rock",
+          "checkin_time": "11:30 AM",
+          "breakfast_provided": false,
+          "amenities": ["Free Parking", "Room Heater", "Sea View"],
+          "image": "https://example.com/hotel_sun_rock.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Hotel+Sun+Rock+Kanyakumari",
+          "rooms": [
+            {
+              "type": "Economy Room",
+              "fare_per_night": 1300,
+              "max_guests": 2
+            },
+            {
+              "type": "Superior Room",
+              "fare_per_night": 1800,
+              "max_guests": 3
+            }
+          ],
+          "contact": "+91 9123456799",
+          "ratings": 3.8
+        },
+        {
+          "name": "Hotel Temple City",
+          "checkin_time": "1:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Free Wi-Fi", "Restaurant", "Tour Desk"],
+          "image": "https://example.com/hotel_temple_city.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Hotel+Temple+City+Kanyakumari",
+          "rooms": [
+            {
+              "type": "Standard Room",
+              "fare_per_night": 1400,
+              "max_guests": 2
+            },
+            {
+              "type": "Family Room",
+              "fare_per_night": 2200,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9000000002",
+          "ratings": 3.9
+        }
+      ],
+      "standard": [
+        {
+          "name": "Hotel Ocean Heritage",
+          "checkin_time": "12:30 PM",
+          "breakfast_provided": true,
+          "amenities": ["Free Wi-Fi", "Gym", "Restaurant", "Parking"],
+          "image": "https://example.com/hotel_ocean_heritage.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Hotel+Ocean+Heritage+Kanyakumari",
+          "rooms": [
+            {
+              "type": "Executive Room",
+              "fare_per_night": 4000,
+              "max_guests": 2
+            },
+            {
+              "type": "Suite",
+              "fare_per_night": 6000,
+              "max_guests": 3
+            }
+          ],
+          "contact": "+91 9812345678",
+          "ratings": 4.2
+        },
+        {
+          "name": "Sparsa Resort Kanyakumari",
+          "checkin_time": "1:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Swimming Pool", "Fitness Center", "Beach View"],
+          "image": "https://example.com/sparsa_resort.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Sparsa+Resort+Kanyakumari",
+          "rooms": [
+            {
+              "type": "Superior Room",
+              "fare_per_night": 4500,
+              "max_guests": 2
+            },
+            {
+              "type": "Premium Suite",
+              "fare_per_night": 7000,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9823456799",
+          "ratings": 4.3
+        },
+        {
+          "name": "Hotel Gopinivas Grand",
+          "checkin_time": "2:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Sea View", "Multi-Cuisine Restaurant", "Tour Desk"],
+          "image": "https://example.com/hotel_gopinivas.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Hotel+Gopinivas+Grand+Kanyakumari",
+          "rooms": [
+            {
+              "type": "Executive Room",
+              "fare_per_night": 4800,
+              "max_guests": 2
+            },
+            {
+              "type": "Deluxe Suite",
+              "fare_per_night": 7500,
+              "max_guests": 3
+            }
+          ],
+          "contact": "+91 9834567801",
+          "ratings": 4.4
+        }
+      ],
+      "luxury": [
+        {
+          "name": "Annai Resort & Spa",
+          "checkin_time": "3:00 PM",
+          "breakfast_provided": true,
+          "amenities": ["Luxury Spa", "Infinity Pool", "Private Beach"],
+          "image": "https://example.com/annai_resort.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Annai+Resort+Spa+Kanyakumari",
+          "rooms": [
+            {
+              "type": "Luxury Room",
+              "fare_per_night": 15000,
+              "max_guests": 2
+            },
+            {
+              "type": "Presidential Suite",
+              "fare_per_night": 28000,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9845678910",
+          "ratings": 4.8
+        },
+        {
+          "name": "Sangam Hotel Kanyakumari",
+          "checkin_time": "2:30 PM",
+          "breakfast_provided": true,
+          "amenities": ["Luxury Suites", "Fine Dining", "Sunset View"],
+          "image": "https://example.com/sangam_hotel.jpg",
+          "google_maps_url": "https://maps.google.com/?q=Sangam+Hotel+Kanyakumari",
+          "rooms": [
+            {
+              "type": "Grande Room",
+              "fare_per_night": 18000,
+              "max_guests": 2
+            },
+            {
+              "type": "Royal Suite",
+              "fare_per_night": 32000,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9856789020",
+          "ratings": 4.9
+        },
+        {
+          "name": "The GReatBharat Resort",
+          "checkin_time": "1:30 PM",
+          "breakfast_provided": true,
+          "amenities": ["Private Villas", "Yoga Center", "Fine Dining"],
+          "image": "https://example.com/greatbharat_resort.jpg",
+          "google_maps_url": "https://maps.google.com/?q=The+GReatBharat+Resort+Kanyakumari",
+          "rooms": [
+            {
+              "type": "Luxury Suite",
+              "fare_per_night": 20000,
+              "max_guests": 2
+            },
+            {
+              "type": "Presidential Suite",
+              "fare_per_night": 35000,
+              "max_guests": 4
+            }
+          ],
+          "contact": "+91 9867890132",
+          "ratings": 4.7
+        }
+      ]
+    }
+  }
+]
+  

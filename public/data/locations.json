@@ -2,87 +2,104 @@
   {
     "name": "Chennai",
     "description": "The capital city of Tamil Nadu with a blend of modern and traditional attractions",
-    "image": "chennai.jpg",
+    "image": "src/components/images/chennai-1.png",
     "adventure": [
       {
         "name": "Marina Beach Water Sports",
         "description": "Water sports activities at the famous Marina Beach",
+        "image":"src/components/images/locations/marina_beach_1.jpg",
         "cost": 1500,
         "duration": 180,
         "rating": 4.2,
         "bestTime": "morning",
-        "includesMeal": false
+        "includesMeal": false,
+        "url" : "https://maps.app.goo.gl/avb7GFaNrEjnjQ4H6"
       },
       {
         "name": "Muttukadu Boating",
         "description": "Boating and water sports at Muttukadu backwaters",
+        "image":"src/components/images/locations/muttukadu_1.jpg",
         "cost": 1200,
         "duration": 150,
         "rating": 4.0,
         "bestTime": "afternoon",
-        "includesMeal": false
+        "includesMeal": false,
+        "url":"https://maps.app.goo.gl/RJSdiFNEiZY4XK379"
       },
       {
         "name": "Rock Climbing at Kambakkam Hills",
         "description": "Adventure rock climbing and trekking experience at Kambakkam Hills",
+        "image":"src/components/images/locations/kambakkam_hills_1.jpg",
         "cost": 2000,
         "duration": 240,
         "rating": 4.5,
         "bestTime": "morning",
-        "includesMeal": false
+        "includesMeal": false ,
+        "url" : "https://maps.app.goo.gl/PHsLAa9h1ypsiH5m8"
       }
     ],
     "nature": [
     {
       "name": "Guindy National Park",
       "description": "One of the largest urban national parks in India, home to a wide variety of wildlife, including spotted deer, blackbucks, and several species of birds.",
+      "image":"src/components/images/locations/guindy_national_park_2.jpg",
       "cost": 0,
       "duration": 180,
       "rating": 4.5,
       "bestTime": "Morning or Evening",
-      "includesMeal": false
+      "includesMeal": false ,
+      "url" : "https://maps.app.goo.gl/2gZhESiy5387YdiFA"
     },
     {
       "name": "Elliot's Beach (Besant Nagar Beach)",
       "description": "A serene beach where you can enjoy the calm sea and surrounding greenery. Ideal for evening walks and peaceful moments by the shore.",
+      "image":"src/components/images/locations/elliots_beach_1.jpg",
       "cost": 0,
       "duration": 120,
       "rating": 4.6,
       "bestTime": "Evening",
-      "includesMeal": false
+      "includesMeal": false ,
+      "url" : "https://maps.app.goo.gl/J5RrEeCdGYNX1xDL7"
     },
     {
       "name": "Arignar Anna Zoological Park (Vandalur Zoo)",
       "description": "One of the largest zoos in India, spread across 1,265 acres of greenery, home to a wide range of animals.",
+      "image":"src/components/images/locations/arignar_anna_zoological_park_1.jpg",
       "cost": 50,
       "duration": 180,
       "rating": 4.4,
       "bestTime": "Morning",
-      "includesMeal": false
+      "includesMeal": false ,
+      "url" : "https://maps.app.goo.gl/NT27T6kLzpYKPEq16"
     },
     {
       "name": "Semmozhi Poonga",
       "description": "A beautifully maintained botanical garden in the heart of Chennai, perfect for a peaceful escape with a variety of plants and flowers.",
+      "image":"src/components/images/locations/semmozhi_poonga.jpg",
       "cost": 20,
       "duration": 120,
       "rating": 4.3,
       "bestTime": "Morning",
-      "includesMeal": false
+      "includesMeal": false ,
+      "url" : "https://maps.app.goo.gl/A3sQVTfY65fDedBY9"
     }
   ],
     "luxury": [
       {
         "name": "Spa at Leela Palace",
         "description": "Luxury spa experience at the five-star Leela Palace hotel",
+        "image":"src/components/images/locations/Spa_at_Le_Pondy_2.jpg",
         "cost": 5000,
         "duration": 180,
         "rating": 4.8,
         "bestTime": "evening",
-        "includesMeal": false
+        "includesMeal": false ,
+        "url" : "https://maps.app.goo.gl/QBVBRJEg4RySwoEt7"
       },
       {
         "name": "Luxury Yacht Cruise",
         "description": "Private yacht cruise along the coast with refreshments",
+        "image":"src/components/images/locations/yatch_crusie_1.png",
         "cost": 8000,
         "duration": 240,
         "rating": 4.7,
@@ -92,69 +109,83 @@
       {
         "name": "Fine Dining at ITC Grand Chola",
         "description": "Gourmet experience at one of Chennai's most luxurious hotels",
+        "image":"src/components/images/locations/itc_grand_chola_1.png",
         "cost": 4500,
         "duration": 150,
         "rating": 4.9,
         "bestTime": "night",
-        "includesMeal": true
+        "includesMeal": true ,
+        "url" : "https://maps.app.goo.gl/Zn2rXtK4BiN74xjm9"
       }
     ],
     "food": [
       {
         "name": "Saravana Bhavan Experience",
         "description": "Authentic South Indian cuisine at the famous Saravana Bhavan",
+        "image":"src/components/images/locations/SB_1.png",
         "cost": 800,
         "duration": 120,
         "rating": 4.5,
         "bestTime": "afternoon",
-        "includesMeal": true
+        "includesMeal": true ,
+        "url" : "https://maps.app.goo.gl/7uzPpayVTe7VWJDP8"
       },
       {
         "name": "Street Food Tour",
         "description": "Guided tour of Chennai's best street food spots",
+        "image":"src/components/images/locations/street_food_maha_1.png",
         "cost": 1200,
         "duration": 180,
         "rating": 4.6,
         "bestTime": "evening",
-        "includesMeal": true
+        "includesMeal": true ,
+        "url" : "https://maps.app.goo.gl/JbgrSc1FiRB6AM5c6"
       },
       {
-        "name": "Seafood Delicacies at Mahabalipuram",
+        "name": "Seafood Delicacies",
         "description": "Coastal seafood experience with freshly caught fish and prawns",
+        "image":"src/components/images/locations/seafood_mahabali_1.png",
         "cost": 2000,
         "duration": 180,
         "rating": 4.7,
         "bestTime": "lunch",
-        "includesMeal": true
+        "includesMeal": true ,
+        "url" : "https://maps.app.goo.gl/KH73kSs5JMvvPVHE6"
       }
     ],
     "cultural": [
       {
         "name": "Kapaleeshwarar Temple",
         "description": "Ancient Dravidian temple dedicated to Lord Shiva",
+        "image":"src/components/images/locations/kapaleeshwarar_temple_1.jpg",
         "cost": 0,
         "duration": 120,
         "rating": 4.7,
         "bestTime": "morning",
-        "includesMeal": false
+        "includesMeal": false ,
+        "url" : "https://maps.app.goo.gl/zWgYBB6wt5qTgVFv6"
       },
       {
         "name": "Government Museum",
         "description": "Museum with archaeological and numismatic collections",
+        "image":"src/components/images/locations/government_museum_1.jpg",
         "cost": 250,
         "duration": 180,
         "rating": 4.2,
         "bestTime": "afternoon",
-        "includesMeal": false
+        "includesMeal": false ,
+        "url" : "https://maps.app.goo.gl/TKok5PqWY2o6vT7FA"
       },
       {
         "name": "Fort St. George",
         "description": "Historical fort built by the British East India Company",
+        "image":"src/components/images/locations/fort_st.george_2.jpg",
         "cost": 200,
         "duration": 150,
         "rating": 4.3,
         "bestTime": "morning",
-        "includesMeal": false
+        "includesMeal": false ,
+        "url" : "https://maps.app.goo.gl/iEHLeqWwXdFsqoRF8"
       }
     ],
     "businessTrip": {
@@ -206,54 +237,64 @@
   {
     "name": "Vellore",
     "description": "Historical city known for its fort and temple",
-    "image": "vellore.jpg",
+    "image": "src/components/images/vellore-1.png",
     "adventure": [
       {
         "name": "Yelagiri Hills Trekking",
         "description": "Trekking to Swamimalai Hills with panoramic views",
+        "image":"src/components/images/locations/yelagiri_hills_trekking_1.jpg",
         "cost": 1000,
         "duration": 240,
         "rating": 4.3,
         "bestTime": "morning",
-        "includesMeal": false
+        "includesMeal": false ,
+        "url" : "https://maps.app.goo.gl/3NLtZqYvvC2hFnd47"
       },
       {
-        "name": "Adventure Camp",
+        "name": "Adventure Camp Yelagiri Hills",
         "description": "Outdoor adventure activities including zip-lining and rappelling",
+        "image":"src/components/images/locations/adventure_camp_1.webp",
         "cost": 1500,
         "duration": 300,
         "rating": 4.2,
         "bestTime": "morning",
-        "includesMeal": true
+        "includesMeal": true ,
+        "url" : "https://maps.app.goo.gl/cYJcFK1Ymn4o2dwHA"
       }
     ],
     "nature": [
     {
       "name": "Amirthi Forest Reserve",
       "description": "A serene forest area with a rich variety of flora and fauna, including a small waterfall. Ideal for nature walks, trekking, and wildlife spotting.",
+      "image":"src/components/images/locations/amirthi_forest_reserve_1.png",
       "cost": 0,
       "duration": 180,
       "rating": 4.6,
       "bestTime": "Morning",
-      "includesMeal": false
+      "includesMeal": false ,
+      "url" : "https://maps.app.goo.gl/pJUNvhwz75aahnJw9"
     },
     {
       "name": "Palar River",
       "description": "A river running through the Vellore region, offering tranquil views and a peaceful natural environment. Perfect for a calm stroll along its banks.",
+      "image":"src/components/images/locations/palar_river_1.jpg",
       "cost": 0,
       "duration": 120,
       "rating": 4.2,
       "bestTime": "Evening",
-      "includesMeal": false
+      "includesMeal": false ,
+      "url" : "https://maps.app.goo.gl/N6JiUksfHxsuXRe27"
     },
     {
       "name": "Vellore Lake",
       "description": "A beautiful lake surrounded by lush green areas, providing a peaceful atmosphere for picnics, boating, and relaxation.",
       "cost": 30,
+      "image":"src/components/images/locations/vellore_lake.webp",
       "duration": 120,
       "rating": 4.4,
       "bestTime": "Morning or Evening",
-      "includesMeal": false
+      "includesMeal": false ,
+      "url" : "https://maps.app.goo.gl/Kidg8yxPhpLBNrXu7"
     }
   ],
     "luxury": [
@@ -261,88 +302,106 @@
         "name": "Fortune Park",
         "description": "Luxury stay and spa experience",
         "cost": 6000,
+        "image":"src/components/images/locations/fortune_park_1.jpg",
         "duration": 1440,
         "rating": 4.5,
         "bestTime": "evening",
-        "includesMeal": true
+        "includesMeal": true ,
+        "url" : "https://maps.app.goo.gl/g7KMS7VPV9yrYTTg8"
       },
       {
         "name": "GRT Signature Dining",
         "description": "Fine dining experience at GRT Grand",
+        "image":"src/components/images/locations/GRT_Signature_Dining_1.jpg",
         "cost": 2500,
         "duration": 120,
         "rating": 4.4,
         "bestTime": "evening",
-        "includesMeal": true
+        "includesMeal": true ,
+        "url":"https://maps.app.goo.gl/HvES6W1hEReEYSAM9"
       }
     ],
     "food": [
       {
         "name": "Vellore Biryani Tour",
         "description": "Tasting the famous Arcot/Ambur style biryani",
+        "image":"src/components/images/locations/Vellore_Biryani_Tour_2.jpg",
         "cost": 800,
         "duration": 120,
         "rating": 4.7,
         "bestTime": "afternoon",
-        "includesMeal": true
+        "includesMeal": true ,
+        "url" : "https://maps.app.goo.gl/3rjGa7CHczWsxvrH7"
       },
       {
         "name": "Local Sweets Experience",
         "description": "Sampling traditional Tamil sweets and snacks",
         "cost": 500,
+        "image":"src/components/images/locations/Local_Sweets_Experience_1.avif",
         "duration": 90,
         "rating": 4.3,
         "bestTime": "evening",
-        "includesMeal": true
-      }
+        "includesMeal": true,
+        "url" : "https://maps.app.goo.gl/yPdAQ768rcq4mWgA8"
+       }
     ],
     "relaxation": [
       {
         "name": "Amirthi Forest Picnic",
         "description": "Peaceful picnic amidst the serene Amirthi Forest",
         "cost": 600,
+        "image":"src/components/images/locations/amirthi_forest_reserve_1.png",
         "duration": 240,
         "rating": 4.1,
         "bestTime": "afternoon",
-        "includesMeal": true
+        "includesMeal": true,
+        "url" : "https://maps.app.goo.gl/pJUNvhwz75aahnJw9"
       },
       {
-        "name": "Botanical Garden",
-        "description": "Leisure walk in the Government Botanical Garden",
+        "name": "Sunken Garden",
+        "description": "Leisure walk in the Sunken Garden",
         "cost": 50,
+        "image":"src/components/images/locations/botanical_garder_2.jpg",
         "duration": 120,
         "rating": 4.0,
         "bestTime": "morning",
-        "includesMeal": false
+        "includesMeal": false ,
+        "url" : "https://maps.app.goo.gl/frbrTg2Pseo7mwug6"
       }
     ],
     "cultural": [
       {
         "name": "Golden Temple",
         "description": "Stunning Lakshmi temple with gold plating",
+        "image":"src/components/images/locations/Golden_Temple_1.jpg",
         "cost": 0,
         "duration": 120,
         "rating": 4.8,
         "bestTime": "morning",
-        "includesMeal": false
+        "includesMeal": false,
+        "url" : "https://maps.app.goo.gl/BT7MGAHn5QrFqYEj6"
       },
       {
         "name": "Vellore Fort Complex",
         "description": "16th-century fort with a temple and museum",
+        "image":"src/components/images/locations/Vellore_Fort_Complex_1.jpg",
         "cost": 100,
         "duration": 180,
         "rating": 4.6,
         "bestTime": "morning",
-        "includesMeal": false
+        "includesMeal": false,
+        "url" : "https://maps.app.goo.gl/LBUapZE1geAnUYMNA"
       },
       {
         "name": "Jalakandeswarar Temple",
         "description": "Ancient temple inside the Vellore Fort",
+        "image":"src/components/images/locations/Jalakandeswarar.jpg",
         "cost": 0,
         "duration": 90,
         "rating": 4.5,
         "bestTime": "afternoon",
-        "includesMeal": false
+        "includesMeal": false,
+        "url" : "https://maps.app.goo.gl/7Fmxe9uXJnjjFj7w7"
       }
       
     ],
@@ -394,152 +453,182 @@
   },{
     "name": "Pondicherry",
     "description": "A former French colony with beautiful beaches and spiritual centers",
-    "image": "pondicherry.jpg",
+    "image": "src/components/images/pondicherry-1.png",
     "adventure": [
       {
         "name": "Paradise Beach Water Sports",
         "description": "Jet skiing, banana boat rides, and parasailing",
+        "image":"src/components/images/locations/Paradise_Beach_Water_Sports_1.jpg",
         "cost": 1800,
         "duration": 180,
         "rating": 4.5,
         "bestTime": "morning",
-        "includesMeal": false
+        "includesMeal": false ,
+        "url" : "https://maps.app.goo.gl/rz7mNQxzK5gk1SUP8"
       },
       {
         "name": "Scuba Diving",
         "description": "Explore underwater marine life with professional instructors",
+        "image":"src/components/images/locations/Scuba_Diving_2.jpg",
         "cost": 3500,
         "duration": 240,
         "rating": 4.7,
         "bestTime": "morning",
-        "includesMeal": false
+        "includesMeal": false,
+        "url" : "https://maps.google.com/?q=Scuba+Diving+Pondicherry"
       }
     ],
     "nature": [
     {
       "name": "Paradise Beach",
       "description": "A pristine, secluded beach known for its clean sand and clear waters, ideal for relaxing, sunbathing, and enjoying the natural beauty.",
+      "image":"src/components/images/locations/Paradise_Beach_1.jpeg",
       "cost": 100,
       "duration": 180,
       "rating": 4.7,
       "bestTime": "Morning or Evening",
-      "includesMeal": false
+      "includesMeal": false,
+      "url" : "https://maps.google.com/?q=Paradise+Beach+Pondicherry"
     },
     {
       "name": "Ousteri Lake",
       "description": "A scenic lake surrounded by lush greenery, popular for bird watching and nature walks. It offers a peaceful escape from the city.",
+      "image":"src/components/images/locations/Ousteri_lake_1.jpg",
       "cost": 0,
       "duration": 120,
       "rating": 4.5,
       "bestTime": "Morning or Evening",
-      "includesMeal": false
+      "includesMeal": false,
+      "url" : "https://maps.google.com/?q=Paradise+Beach+Pondicherry"
     },
     {
       "name": "Auroville Forest",
       "description": "A lush forest area located near Auroville, filled with indigenous trees, and perfect for nature walks, bird watching, and environmental exploration.",
+      "image":"src/components/images/locations/Auroville_Forest_1.jpeg",
       "cost": 0,
       "duration": 180,
       "rating": 4.6,
       "bestTime": "Morning",
-      "includesMeal": false
+      "includesMeal": false,
+      "url" : "https://maps.google.com/?q=Auroville+Forest+Pondicherry"
     },
     {
       "name": "Chunnambar Boat House",
       "description": "A picturesque spot near the Chunnambar River where you can enjoy boating, nature walks, and beautiful views of the river and surrounding greenery.",
+      "image":"src/components/images/locations/Chunnambar_Boat_House.jpg",
       "cost": 200,
       "duration": 120,
       "rating": 4.4,
       "bestTime": "Morning or Evening",
-      "includesMeal": false
+      "includesMeal": false,
+      "url" : "https://maps.google.com/?q=Chunnambar+Boat+House+Pondicherry"
     }
   ],
     "luxury": [
       {
         "name": "La Villa",
         "description": "Fine dining experience at the upscale La Villa restaurant",
+        "image":"src/components/images/locations/La_Villa_1.jpg",
         "cost": 3000,
         "duration": 150,
         "rating": 4.6,
         "bestTime": "evening",
-        "includesMeal": true
+        "includesMeal": true,
+        "url" : "https://maps.google.com/?q=La+Villa+Pondicherry"
       },
       {
         "name": "Spa at Le Pondy",
         "description": "Beachfront luxury spa treatments",
+        "image":"src/components/images/locations/Spa_at_Le_Pondy_1.jpg",
         "cost": 4000,
         "duration": 180,
         "rating": 4.5,
         "bestTime": "afternoon",
-        "includesMeal": false
+        "includesMeal": false,
+        "url" : "https://maps.google.com/?q=Le+Pondy+Pondicherry"
       }
     ],
     "food": [
       {
         "name": "French Cuisine Tour",
         "description": "Tour of authentic French restaurants and bakeries",
+        "image":"src/components/images/locations/french_food_tour_1.png",
         "cost": 1500,
         "duration": 210,
         "rating": 4.8,
         "bestTime": "afternoon",
-        "includesMeal": true
+        "includesMeal": true,
+        "url" : "https://maps.google.com/?q=French+Restaurants+Pondicherry"
       },
       {
         "name": "Baker Street",
         "description": "Famous bakery known for croissants and French pastries",
+        "image":"src/components/images/locations/baker_street_1.jpeg",
         "cost": 600,
         "duration": 90,
         "rating": 4.4,
         "bestTime": "morning",
-        "includesMeal": true
+        "includesMeal": true,
+        "url" : "https://maps.google.com/?q=Baker+Street+Pondicherry"
       }
     ],
     "relaxation": [
       {
         "name": "Serenity Beach",
         "description": "Quiet beach perfect for relaxation and sunbathing",
+        "image":"src/components/images/locations/serenity_beach_1.png",
         "cost": 0,
         "duration": 180,
         "rating": 4.3,
         "bestTime": "afternoon",
-        "includesMeal": false
+        "includesMeal": false,
+        "url" : "https://maps.google.com/?q=Serenity+Beach+Pondicherry"
       },
       {
         "name": "Auroville Meditation",
         "description": "Peaceful meditation session at the Matrimandir",
+        "image":"src/components/images/locations/Auroville_Forest_2.jpg",
         "cost": 0,
         "duration": 120,
         "rating": 4.9,
         "bestTime": "morning",
-        "includesMeal": false
+        "includesMeal": false,
+        "url" : "https://maps.google.com/?q=Matrimandir+Auroville"
       }
     ],
     "cultural": [
       {
         "name": "Aurobindo Ashram",
         "description": "Spiritual center founded by Sri Aurobindo",
+        "image":"src/components/images/locations/aurobindo_Ashram_1.png",
         "cost": 0,
         "duration": 120,
         "rating": 4.6,
         "bestTime": "morning",
-        "includesMeal": false
+        "includesMeal": false,
+        "url" : "https://maps.google.com/?q=Sri+Aurobindo+Ashram+Pondicherry"
       },
       {
         "name": "French Quarter Walking Tour",
         "description": "Guided tour of the colonial French Quarter",
+        "image":"src/components/images/locations/french_walking_tour_1.png",
         "cost": 1000,
         "duration": 180,
         "rating": 4.7,
         "bestTime": "evening",
-        "includesMeal": false
+        "includesMeal": false,
+        "url" : "https://maps.google.com/?q=French+Quarter+Pondicherry"
       },
       {
         "name": "Pondicherry Museum",
         "description": "Museum with French and Indian artifacts",
+        "image":"src/components/images/locations/pondicherry_museum_1.png",
         "cost": 150,
         "duration": 120,
         "rating": 4.0,
         "bestTime": "afternoon",
-        "includesMeal": false
+        "includesMeal": false,
+        "url" : "https://maps.google.com/?q=Pondicherry+Museum"
       }
     ],
     "businessTrip": {
@@ -596,138 +685,166 @@
       {
         "name": "Surfing at Covelong Beach",
         "description": "Surfing lessons for beginners and intermediate surfers",
+        "image":"src/components/images/locations/Surfing_at_Covelong_Beach_2.jpg",
         "cost": 2000,
         "duration": 180,
         "rating": 4.4,
         "bestTime": "morning",
-        "includesMeal": false
+        "includesMeal": false,
+        "url" : "https://maps.google.com/?q=Covelong+Beach"
       },
       {
         "name": "Beach ATV Rides",
         "description": "ATV rides along the coastal areas",
+        "image":"src/components/images/locations/Beach_ATV_Rides_1.jpg",
         "cost": 1000,
         "duration": 60,
         "rating": 4.1,
         "bestTime": "afternoon",
-        "includesMeal": false
+        "includesMeal": false ,
+        "url" : "https://maps.google.com/?q=Beach+ATV+Rides+Mahabalipuram"
       }
     ],
     "nature": [
     {
       "name": "Arjuna's Penance",
       "description": "A massive rock relief that depicts the story of the Mahabharata, surrounded by lush greenery, making it a blend of history and nature.",
+      "image":"src/components/images/locations/Arjunas_Penance_2.jpg",
       "cost": 0,
       "duration": 90,
       "rating": 4.5,
       "bestTime": "Morning",
-      "includesMeal": false
+      "includesMeal": false,
+      "url" : "https://maps.google.com/?q=Arjuna's+Penance+Mahabalipuram"
     },
     {
       "name": "Kancheepuram – Mahabalipuram Road",
       "description": "A scenic drive along this road offers views of fields, small villages, and the coast, allowing travelers to enjoy the lush green landscapes on their way to Mahabalipuram.",
+      "image":"src/components/images/locations/Kancheepuram_Mahabalipuram_Road_1.jpg",
       "cost": 0,
       "duration": 180,
       "rating": 4.2,
       "bestTime": "Morning",
-      "includesMeal": false
+      "includesMeal": false,
+      "url" : "https://maps.google.com/?q=Kancheepuram+to+Mahabalipuram+Road"
     },
     {
       "name": "Mammallapuram Coastal Walk",
       "description": "A scenic coastal walk along the shores of Mahabalipuram, where you can enjoy stunning views of the Bay of Bengal and the surrounding nature.",
+      "image":"src/components/images/locations/Mamallapuram_Coastal_Walk_1.jpg",
       "cost": 0,
       "duration": 150,
       "rating": 4.5,
       "bestTime": "Morning or Evening",
-      "includesMeal": false
+      "includesMeal": false,
+      "url" : "https://maps.google.com/?q=Mahabalipuram+Beach"
     }
   ],
     "luxury": [
       {
         "name": "InterContinental Resort",
         "description": "Day pass to the luxury beachfront resort with pool access",
+        "image":"src/components/images/locations/InterContinental_Resort_1.jpg",
         "cost": 5000,
         "duration": 300,
         "rating": 4.7,
         "bestTime": "afternoon",
-        "includesMeal": true
+        "includesMeal": true,
+        "url" :  "https://maps.google.com/?q=InterContinental+Chennai+Mahabalipuram+Resort"
       },
       {
         "name": "Sunset Beachside Dinner",
         "description": "Private candlelight dinner by the shore",
+        "image":"src/components/images/locations/Sunset_Beachside_Dinner_2.jpg",
         "cost": 4000,
         "duration": 150,
         "rating": 4.8,
         "bestTime": "evening",
-        "includesMeal": true
+        "includesMeal": true,
+        "url" : "https://maps.google.com/?q=Mahabalipuram+Beach"
       }
     ],
     "food": [
       {
         "name": "Seafood Experience",
         "description": "Fresh seafood feast at local beachside restaurants",
+        "image":"src/components/images/locations/Seafood_Experience_1.jpg",
         "cost": 1200,
         "duration": 120,
         "rating": 4.5,
         "bestTime": "evening",
-        "includesMeal": true
+        "includesMeal": true,
+        "url" :  "https://maps.google.com/?q=Moonrakers+Restaurant+Mahabalipuram"
       },
       {
         "name": "Othavadai Street Food Walk",
         "description": "Exploring the diverse food options at Othavadai Street",
+        "image":"src/components/images/locations/thavadai_Street_Food_Walk_1.jpg",
         "cost": 800,
         "duration": 150,
         "rating": 4.3,
         "bestTime": "evening",
-        "includesMeal": true
+        "includesMeal": true,
+        "url" :  "https://maps.google.com/?q=Othavadai+Street+Mahabalipuram"
       }
     ],
     "relaxation": [
       {
         "name": "Beachside Yoga",
         "description": "Morning yoga sessions by the beach",
+        "image":"src/components/images/locations/Beachside_Yoga_1.jpg",
         "cost": 500,
         "duration": 90,
         "rating": 4.6,
         "bestTime": "morning",
-        "includesMeal": false
+        "includesMeal": false,
+        "url" : "https://maps.google.com/?q=Mahabalipuram+Beach"
       },
       {
         "name": "Ayurvedic Massage",
         "description": "Traditional ayurvedic treatments and massages",
+        "image":"src/components/images/locations/ayurvedic_spa_1.avif",
         "cost": 2500,
         "duration": 120,
         "rating": 4.5,
         "bestTime": "afternoon",
-        "includesMeal": false
+        "includesMeal": false,
+        "url" :  "https://maps.google.com/?q=Ayurvedic+Massage+Centers+in+Mahabalipuram"
       }
     ],
     "cultural": [
       {
         "name": "Shore Temple",
         "description": "Ancient stone temple overlooking the Bay of Bengal",
+        "image":"src/components/images/locations/shore_temple_1.webp",
         "cost": 600,
         "duration": 120,
         "rating": 4.8,
         "bestTime": "morning",
-        "includesMeal": false
+        "includesMeal": false,
+        "url" : "https://maps.google.com/?q=Shore+Temple+Mahabalipuram"
       },
       {
         "name": "Arjuna's Penance",
         "description": "Massive rock relief with intricate carvings",
+        "image":"src/components/images/locations/Arjunas_Penance_2.jpg",
         "cost": 0,
         "duration": 90,
         "rating": 4.7,
         "bestTime": "morning",
-        "includesMeal": false
+        "includesMeal": false,
+        "url" :"https://maps.google.com/?q=Arjuna's+Penance+Mahabalipuram"
       },
       {
         "name": "Five Rathas",
         "description": "Five monolithic rock temples shaped like chariots",
+        "image":"src/components/images/locations/Five_Rathas_1.jpg",
         "cost": 600,
         "duration": 120,
         "rating": 4.6,
         "bestTime": "afternoon",
-        "includesMeal": false
+        "includesMeal": false,
+        "url" : "https://maps.google.com/?q=Pancha+Rathas+Mahabalipuram"
       }
     ],
     "businessTrip": {

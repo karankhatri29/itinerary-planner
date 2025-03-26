@@ -199,86 +199,92 @@ const ItineraryForm = () => {
             <div className="row g-4">
               {/* Trip Duration Card */}
               {/* Trip Duration Card */}
-<div className="col-md-12">
-  <div 
-    className="card border-0 shadow-lg rounded-4 position-relative overflow-hidden" 
-    style={{ 
-      background: "linear-gradient(135deg, rgba(255,255,255,0.8), rgba(255,255,255,0.5))", 
-      backdropFilter: "blur(12px)",
-      border: "1px solid rgba(255,255,255,0.2)"
-    }}
-  >
-    
-    {/* Floating Icon */}
-    <div 
-      className="position-absolute top-0 start-50 translate-middle bg-primary text-white p-3 rounded-circle shadow-lg" 
-      style={{ width: "60px", height: "60px", display: "flex", alignItems: "center", justifyContent: "center" }}
-    >
-      <i className="bi bi-calendar-event fs-4"></i>
-    </div>
+              <div className="row g-4">
+      <div className="col-md-12">
+        <div
+          className="card border-0 shadow-lg rounded-4 position-relative overflow-hidden"
+          style={{
+            background:
+              "linear-gradient(135deg, rgba(255,255,255,0.8), rgba(255,255,255,0.5))",
+            backdropFilter: "blur(12px)",
+            border: "1px solid rgba(255,255,255,0.2)",
+          }}
+        >
+          {/* Floating Icon */}
+          <div
+            className="position-absolute top-0 start-50 translate-middle bg-primary text-white p-3 rounded-circle shadow-lg"
+            style={{
+              width: "60px",
+              height: "60px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <i className="bi bi-calendar-event fs-4"></i>
+          </div>
 
-    <div className="row g-0">
-      
-      {/* Background Image Section */}
-      <div className="col-md-4">
-        <div 
-          style={{ 
-            height: "100%", 
-            background: "url('/api/placeholder/400/320') center/cover no-repeat", 
-            filter: "brightness(0.85) contrast(1.1)",
-            borderTopLeftRadius: "12px",
-            borderBottomLeftRadius: "12px"
-          }} 
-        ></div>
-      </div>
-
-      {/* Input Section */}
-      <div className="col-md-8">
-        <div className="card-body p-5">
-          <h5 className="card-title text-dark text-center mb-4">Trip Duration</h5>
-
-          <div className="row g-4">
-            {/* Start Date */}
-            <div className="col-md-6">
-              <label className="form-label fw-semibold text-muted">Start Date</label>
-              <input 
-                type="date" 
-                className="form-control form-control-lg rounded-3 shadow-sm border-light transition-effect" 
-                name="startDate" 
-                value={formData.startDate} 
-                onChange={handleChange} 
-                required 
-              />
+          <div className="row g-0">
+            {/* Background Image Section */}
+            <div className="col-md-4">
+              <div
+                className="h-100 w-100"
+                style={{
+                  background: "url('src/components/images/travel-from-to.png') center/cover no-repeat",
+                  filter: "brightness(0.85) contrast(1.1)",
+                  borderTopLeftRadius: "12px",
+                  borderBottomLeftRadius: "12px",
+                }}
+              ></div>
             </div>
 
-            {/* End Date */}
-            <div className="col-md-6">
-              <label className="form-label fw-semibold text-muted">End Date</label>
-              <input 
-                type="date" 
-                className="form-control form-control-lg rounded-3 shadow-sm border-light transition-effect" 
-                name="endDate" 
-                value={formData.endDate} 
-                onChange={handleChange} 
-                required 
-              />
+            {/* Input Section */}
+            <div className="col-md-8">
+              <div className="card-body p-5">
+                <h5 className="card-title text-dark text-center mb-4">Trip Duration</h5>
+
+                <div className="row g-4">
+                  {/* Start Date */}
+                  <div className="col-md-6">
+                    <label className="form-label fw-semibold text-muted">Start Date</label>
+                    <input
+                      type="date"
+                      className="form-control form-control-lg rounded-3 shadow-sm border-dark transition-effect"
+                      name="startDate"
+                      value={formData.startDate}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+
+                  {/* End Date */}
+                  <div className="col-md-6">
+                    <label className="form-label fw-semibold text-muted">End Date</label>
+                    <input
+                      type="date"
+                      className="form-control form-control-lg rounded-3 shadow-sm border-dark transition-effect"
+                      name="endDate"
+                      value={formData.endDate}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
-  </div>
-</div>
 
               
               {/* Destination Card */}
               <div className="col-md-6">
-                <div className="card border-0 shadow-sm h-100 destination-card">
+                <div className="card border-0 shadow-sm h-100 destination-card p-2">
                   <div className="position-relative">
-                    <div style={{height: "150px", backgroundImage: "url('/api/placeholder/400/320')", backgroundSize: "cover", backgroundPosition: "center"}}></div>
+                    <div style={{height: "160px", backgroundImage: "url('src/components/images/pondicherry-1.png')", backgroundSize: "cover", backgroundPosition: "center"}}></div>
                     <div className="position-absolute top-0 end-0 m-2">
-                      <span className="badge bg-primary rounded-pill">Top Destinations</span>
+                      <span className="badge bg-danger rounded-pill">Top Destinations</span>
                     </div>
                   </div>
                   <div className="card-body">
@@ -312,11 +318,11 @@ const ItineraryForm = () => {
               
               {/* Travel Details Card */}
               <div className="col-md-6">
-                <div className="card border-0 shadow-sm h-100">
+                <div className="card border-0 shadow-sm h-100 p-2">
                   <div className="position-relative">
-                    <div style={{height: "150px", backgroundImage: "url('/api/placeholder/400/320')", backgroundSize: "cover", backgroundPosition: "center"}}></div>
+                    <div style={{height: "160px", backgroundImage: "url('src/components/images/chennai-1.png')", backgroundSize: "cover", backgroundPosition: "center"}}></div>
                     <div className="position-absolute top-0 end-0 m-2">
-                      <span className="badge bg-info rounded-pill">Travel Planning</span>
+                      <span className="badge bg-danger rounded-pill">Lowest Prices</span>
                     </div>
                   </div>
                   <div className="card-body">
@@ -364,7 +370,7 @@ const ItineraryForm = () => {
               
               {/* Travel Preferences Card */}
               <div className="col-md-12">
-      <div className="card border-0 shadow-sm">
+      <div className="card border-0 shadow-sm" style={{backgroundImage: "url('src/components/images/preference.png')", backgroundSize: "cover", backgroundPosition: "center"}}>
         <div className="card-body">
           <h5 className="card-title mb-3">
             <i className="bi bi-heart-fill me-2 text-danger"></i>
@@ -381,7 +387,7 @@ const ItineraryForm = () => {
                       : ""
                   }`}
                   onClick={() => handleCardClick(preference.name)}
-                  style={{ cursor: "pointer" }}
+                  style={{ cursor: "pointer",backgroundColor:'rgba(240, 240, 240, 0.6)' }}
                 >
                   <div className="card-body p-3">
                     <div className="d-flex flex-column">
@@ -400,7 +406,7 @@ const ItineraryForm = () => {
           {selectedPreferences.length > 0 && (
             <div className="mt-3">
               <h6>Selected Preferences:</h6>
-              <p className="text-primary">{selectedPreferences.join(", ")}</p>
+              <p className="text-dark">{selectedPreferences.join(", ")}</p>
             </div>
           )}
         </div>
@@ -408,9 +414,9 @@ const ItineraryForm = () => {
     </div>
               
               {/* Accommodation & Transport Card */}
-              <div className="col-md-12">
-                <div className="card border-0 shadow-sm">
-                  <div className="card-body">
+              <div className="col-md-12 p-2">
+                <div className="card border-0 shadow-sm p-2">
+                  <div className="card-body p-2">
                     <div className="row">
                       <div className="col-md-6 border-end">
                         <div className="d-flex align-items-center mb-3">
@@ -435,14 +441,7 @@ const ItineraryForm = () => {
                               ))}
                             </select>
                             <div className="mt-3">
-                              <div className="accommodation-image text-center">
-                                <img 
-                                  src="/api/placeholder/300/200" 
-                                  alt="Accommodation" 
-                                  className="img-fluid rounded" 
-                                  style={{maxHeight: "120px"}} 
-                                />
-                              </div>
+                            <div style={{height: "160px", backgroundImage: "url('src/components/images/accomodation.png')", backgroundSize: "cover", backgroundPosition: "center"}}></div>
                             </div>
                           </div>
                         </div>
@@ -470,14 +469,7 @@ const ItineraryForm = () => {
                               ))}
                             </select>
                             <div className="mt-3">
-                              <div className="transport-image text-center">
-                                <img 
-                                  src="/api/placeholder/300/200" 
-                                  alt="Transport" 
-                                  className="img-fluid rounded" 
-                                  style={{maxHeight: "120px"}} 
-                                />
-                              </div>
+                            <div style={{height: "160px", backgroundImage: "url('src/components/images/transport.png')", backgroundSize: "cover", backgroundPosition: "center"}}></div>
                             </div>
                           </div>
                         </div>

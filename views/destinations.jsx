@@ -3,46 +3,63 @@ import jsonData from "../public/data/locations.json";
 import { Outlet, useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-
-
-const DestinationsPage = ({ destinations = [] }) => {
+const DestinationsPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredCategory, setFilteredCategory] = useState("all");
   const [filteredActivities, setFilteredActivities] = useState([]);
   const navigate = useNavigate();
 
+  const categories = ["adventure", "luxury", "nature", "cultural", "relaxation", "food"];
+
   const handleSearch = (event) => {
     const query = event.target.value.toLowerCase();
+    console.log("Search Query:", query);
     setSearchTerm(query);
 
     const locationData = jsonData.find(
       (location) => location.name.toLowerCase() === query
     );
 
+    console.log("Location Data:", locationData);
+
     if (locationData) {
-      const categories = ["adventure", "luxury", "nature", "relaxation", "food"];
       const allActivities = categories.flatMap(
         (category) => locationData[category] || []
       );
 
+      console.log("All Activities Found:", allActivities);
       setFilteredActivities(allActivities);
-    } 
-    // else {
-    //   setFilteredActivities([]); // Reset if no match
-    // }
+    }
   };
-
   const handleFilter = (category) => {
+    console.log("Selected Category:", category);
     setFilteredCategory(category);
+
+    if (!searchTerm) {
+      console.log("No location selected. Please search for a location first.");
+      return; // Prevent filtering when no location is selected
+    }
+
+    const locationData = jsonData.find(
+      (location) => location.name.toLowerCase() === searchTerm.toLowerCase()
+    );
+
+    if (locationData) {
+      if (category === "all") {
+        // Show all activities for the searched location
+        const allActivities = categories.flatMap(
+          (cat) => locationData[cat] || []
+        );
+        setFilteredActivities(allActivities);
+      } else {
+        // Show only activities of the selected category within the searched location
+        setFilteredActivities(locationData[category] || []);
+      }
+    }
   };
 
-  const filteredDestinations = destinations.filter((destination) => {
-    const matchesSearch = destination.name.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesCategory = filteredCategory === "all" || destination.categories.includes(filteredCategory);
-    return matchesSearch && matchesCategory;
-  });
 
-  console.log("Fileterd:",filteredActivities);
+  console.log("Filtered Activities:", filteredActivities);
 
   return (
     <div className="container-fluid mt-5" >
@@ -64,84 +81,17 @@ const DestinationsPage = ({ destinations = [] }) => {
         </div>
       </div>
 
-      {/* Destination Cards */}
-      <div className="row">
-  {filteredDestinations.length > 0 ? (
-    filteredDestinations.map((destination) => (
-      <div key={destination.id} className="col-md-4 mb-4">
-        <div className="card h-100 shadow-sm">
-          <div className="card-img-container position-relative">
-            <img
-              src={destination.imageUrl || "https://via.placeholder.com/300"}
-              className="card-img-top"
-              alt={destination.name}
-            />
-            <div className="location-badge position-absolute top-0 start-0 m-2">
-              <span className="badge bg-primary p-2">{destination.name}</span>
-            </div>
-          </div>
-          <div className="card-body">
-            <h5 className="card-title">{destination.name}</h5>
-            <p className="card-text">{destination.description}</p>
-            <div className="mb-2">
-              {destination.categories.map((category, index) => (
-                <span key={index} className="badge bg-secondary me-1">{category}</span>
-              ))}
-            </div>
-            <div className="mt-2">
-              <strong>Known For:</strong>
-              <ul className="list-unstyled">
-                {destination.knownFor.slice(0, 3).map((item, index) => (
-                  <li key={index}>
-                    <i className="bi bi-check-circle-fill text-success me-2"></i>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Activities Section */}
-            {filteredActivities.length > 0 && (
-              <div className="mt-3">
-                <strong>Popular Activities:</strong>
-                <ul className="list-group list-group-flush">
-                  {filteredActivities.map((activity, index) => (
-                    <li key={index} className="list-group-item">
-                      <i className="bi bi-star-fill text-warning me-2"></i>
-                      {activity}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </div>
-          <div className="card-footer bg-white">
-            <button
-              className="btn btn-outline-primary w-100"
-              onClick={() => navigate(`/destinations/${destination.id}`)}
-            >
-              Explore
-            </button>
-          </div>
-        </div>
-      </div>
-    ))
-  ) : (
-    <p className="text-center text-muted">No destinations found.</p>
-  )}
-</div>
-
-
       {/* Filter by Experience */}
       <div className="row my-4 text-white">
         <div className="col-12">
           <h3>Filter by Experience</h3>
-          <div className="category-filters d-flex flex-wrap text-white ">
-            {["all", "adventure", "cultural", "heritage", "food", "relaxation", "luxury", "nature", "beach", "spiritual"].map((category) => (
+          <div className="category-filters d-flex flex-wrap text-dark ">
+            {["all", "adventure", "cultural", "food", "relaxation", "luxury", "nature"].map((category) => (
               <button
                 key={category}
                 className={`btn m-1 ${filteredCategory === category ? "btn-dark" : "btn-outline-dark"}`}
                 onClick={() => handleFilter(category)}
+                style={{ backgroundColor: "white", color: "black" }}
               >
                 {category.charAt(0).toUpperCase() + category.slice(1)}
               </button>
@@ -150,8 +100,50 @@ const DestinationsPage = ({ destinations = [] }) => {
         </div>
       </div>
 
+      {/* Destination Cards */}
+      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        {filteredActivities.length > 0 ? (
+          filteredActivities.map((destination, destIndex) => (
+            <div key={destIndex} className="col">
+              <div className="card h-100 shadow-sm border-0 p-3">
+                {/* Destination Image (Optional, if available) */}
+                {destination.image && (
+                  <img src={destination.image} className="card-img-top" alt={destination.name} style={{ height: "180px", objectFit: "cover" }} />
+                )}
+
+                {/* Card Body */}
+                <div className="card-body">
+                  <div className="d-flex justify-content-between align-items-center">
+                    <h5 className="mb-0">{destination.name}</h5>
+                    <span className="badge bg-primary">{destination.rating}</span>
+                  </div>
+                  <p className="text-muted small">{destination.description}</p>
+                </div>
+
+                {/* Card Footer */}
+                <div className="card-footer bg-white border-0">
+                  <button
+                    className="btn btn-outline-primary w-100"
+                    onClick={() => window.open(destination.url, "_blank")}
+                  >
+                    Explore
+                  </button>
+
+                </div>
+              </div>
+            </div>
+          ))
+        ) : (
+          <p className="text-center text-white">No destinations found.</p>
+
+        )}
+      </div>
+
+
+
+
       {/* Plan Your Trip Section */}
-      <div className="row mb-5">
+      <div className="row mb-5 mt-5">
         <div className="col-12">
           <div className="card">
             <div className="card-header bg-primary text-white">
@@ -166,7 +158,7 @@ const DestinationsPage = ({ destinations = [] }) => {
           </div>
         </div>
       </div>
-    <Outlet />
+      <Outlet />
     </div>
   );
 };

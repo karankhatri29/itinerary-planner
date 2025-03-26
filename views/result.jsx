@@ -95,7 +95,6 @@ const ItineraryResult = ({ plan, onUpdate, onDelete }) => {
       ? updatedPlan.transportOptions.reduce((sum, acc) => sum + (acc.cost || 0), 0)
       : 0;
       const newTotalCost = newActivityCost + ((newAccommodationCost * travelers));
-
   
       // Open new window for printing
       const newWindow = window.open("", "_blank");
@@ -185,7 +184,7 @@ const ItineraryResult = ({ plan, onUpdate, onDelete }) => {
                      <ul>${transportOptions
                        .map(
                          (transport) =>
-                           `<li><strong>${transport.type}:</strong> ₹${transport.cost.toLocaleString()} per person</li>`
+                           `<li><strong>${transport.type}:</strong>starting @ ₹${transport.cost.toLocaleString()}</li>`
                        )
                        .join("")}</ul>`
                   : ""
@@ -299,13 +298,19 @@ const ItineraryResult = ({ plan, onUpdate, onDelete }) => {
                       day.activities.map((activity, activityIndex) => (
                         <div key={activityIndex} className="d-flex justify-content-between align-items-center border-bottom py-2">
                           <div>
+                          <img src={activity.image} className="card-img-top" alt={activity.name} style={{ margin:"10px",height:"100px",width: "160px", objectFit: "cover" }} />
+                          </div>
+                          <div>
                             <h5 className="mb-1">{activity.name || "Unnamed Activity"}</h5>
                             <p className="mb-0 text-muted">{activity.description || "No description available"}</p>
                             {activity.cost !== undefined && (
                               <p className="text-success"><strong>Cost:</strong> ₹{activity.cost.toLocaleString()}</p>
                             )}
                           </div>
-                          <button className="btn btn-sm btn-outline-danger" onClick={() => handleDeleteActivity(dayIndex, activityIndex)}>Delete</button>
+                          <div className="card-footer bg-white border-0 w-60">
+                          <button className="btn btn-outline-primary " onClick={() => window.open(activity.url, "_blank")}>Explore</button><br></br>
+                          <button className="btn btn-sm btn-outline-danger mt-4" onClick={() => handleDeleteActivity(dayIndex, activityIndex)}>Delete</button>
+                          </div>
                         </div>
                       ))
                     ) : (

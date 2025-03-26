@@ -49,7 +49,7 @@ const Login = () => {
             }
 
             alert("Login successful!");
-            // window.location.href = "/index"; // Redirect after login
+             window.location.href = "/destinations"; // Redirect after login
         } else {
             setErrorMessage("Invalid email or password. Please try again.");
         }
@@ -57,7 +57,7 @@ const Login = () => {
 
 
     return (
-        <div className="login-container">
+        <div className="login-container" style={{marginTop:"135px"}}>
             <div className="login-card">
                 <h3 className="login-title">Login to Your Account</h3>
                 {errorMessage && <div className="alert">{errorMessage}</div>}
@@ -80,12 +80,13 @@ const Login = () => {
                         required
                     />
 
-                    <div className="remember-me">
+                    <div className="remember-me" style={{marginRight:"0px"}}>
                         <input
                             type="checkbox"
                             id="rememberMe"
                             checked={rememberMe}
                             onChange={() => setRememberMe(!rememberMe)}
+                            style={{width:"30px"}}
                         />
                         <label htmlFor="rememberMe">Remember me</label>
                     </div>
