@@ -11,7 +11,6 @@ const ItineraryResult = ({ plan, onUpdate, onDelete }) => {
     const width = 600;
     const height = 600;
   
-    // Get the dimensions of the current screen
     const left = window.screenX + (window.outerWidth - width) / 2;
     const top = window.screenY + (window.outerHeight - height) / 2;
   
