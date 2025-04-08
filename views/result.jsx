@@ -177,6 +177,9 @@ const ItineraryResult = ({ plan, onUpdate, onDelete }) => {
               <p><strong>Dates:</strong> ${startDate} to ${endDate}</p>
               <p><strong>Duration:</strong> ${duration}</p>
               <p><strong>Travelers:</strong> ${travelers}</p>
+
+
+              
               
               ${
                 transportOptions.length > 0

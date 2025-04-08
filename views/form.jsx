@@ -45,11 +45,6 @@ const ItineraryForm = () => {
         }
     }, [navigate]);
 
-    const handleGenerateClick = (e) => {
-      e.preventDefault();
-      console.log("Generating Itinerary...");
-    };
-
 
     const [selectedPreferences, setSelectedPreferences] = useState([]);
     const [experiences, setExperiences] = useState([]);
@@ -502,7 +497,6 @@ const ItineraryForm = () => {
                 type="submit" 
                 className="btn btn-danger btn-lg w-100 py-3 shadow"
                 style={{borderRadius: "50px"}}
-                onClick={handleGenerateClick}
               >
                 <i className="bi bi-magic me-2"></i>
                 Generate Your Personalized Itinerary
