@@ -9,6 +9,20 @@ const Login = () => {
     const [errorMessage, setErrorMessage] = useState("");
     const [credentials, setCredentials] = useState([]);
 
+    const handleLogin = (e) => {
+        e.preventDefault();
+      
+        // Simple credential check for demo
+        if (email === "admin@me.com" && password === "adminpass") {
+          const dummyToken = "abc123securetoken"; 
+          localStorage.setItem("token", dummyToken);
+          navigate("/form"); 
+        } else {
+          alert("Invalid email or password");
+        }
+      };
+      
+
     // Load credentials from JSON file
     useEffect(() => {
         fetch("../public/data/credentials.json")

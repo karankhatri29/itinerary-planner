@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ItineraryResult from "./result";
 import TravelIllustration from "../src/components/TravelIllustration";
+import { useNavigate } from "react-router-dom";
+
 
 const getFilteredActivities = (userInput, experiences, allocatedActivityBudget) => {
     const locationData = experiences.find(exp => exp.name === userInput.location);
@@ -33,6 +35,21 @@ const ItineraryForm = () => {
         accommodation: "budget",
         transport: "public"
     });
+
+    const navigate = useNavigate();
+
+    useEffect(() => {
+      const isAuth = localStorage.getItem("isAuthenticated");
+        if (isAuth !== "true") {
+          navigate("/login");
+        }
+    }, [navigate]);
+
+    const handleGenerateClick = (e) => {
+      e.preventDefault();
+      console.log("Generating Itinerary...");
+    };
+
 
     const [selectedPreferences, setSelectedPreferences] = useState([]);
     const [experiences, setExperiences] = useState([]);
@@ -485,6 +502,7 @@ const ItineraryForm = () => {
                 type="submit" 
                 className="btn btn-danger btn-lg w-100 py-3 shadow"
                 style={{borderRadius: "50px"}}
+                onClick={handleGenerateClick}
               >
                 <i className="bi bi-magic me-2"></i>
                 Generate Your Personalized Itinerary
