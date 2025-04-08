@@ -395,7 +395,7 @@
       {
         "name": "Jalakandeswarar Temple",
         "description": "Ancient temple inside the Vellore Fort",
-        "image":"src/components/images/locations/Jalakandeswarar.jpg",
+        "image":"src/components/images/locations/Jalakandeswarar_Temple_1.jpg",
         "cost": 0,
         "duration": 90,
         "rating": 4.5,

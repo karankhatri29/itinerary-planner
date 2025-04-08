@@ -8,7 +8,7 @@
           "checkin_time": "12:00 PM",
           "breakfast_provided": true,
           "amenities": ["Free Wi-Fi", "Air Conditioning", "24/7 Front Desk"],
-          "image": "https://example.com/hotel_peace_inn.jpg",
+          "image": "src/components/images/hotel-imgs/1.jsp",
           "google_maps_url": "https://maps.google.com/?q=Hotel+Peace+Inn+Chennai",
           "rooms": [
             {
@@ -30,7 +30,7 @@
           "checkin_time": "11:30 AM",
           "breakfast_provided": false,
           "amenities": ["Free Parking", "Laundry Service", "24/7 Front Desk"],
-          "image": "https://example.com/emarald_hotel.jpg",
+          "image":  "src/components/images/hotel-imgs/2.avif",
           "google_maps_url": "https://maps.google.com/?q=Emarald+Hotel+Chennai",
           "rooms": [
             {
@@ -52,7 +52,7 @@
           "checkin_time": "1:00 PM",
           "breakfast_provided": true,
           "amenities": ["Free Wi-Fi", "Air Conditioning", "Room Service"],
-          "image": "https://example.com/hotel_crescent_park.jpg",
+          "image":  "src/components/images/hotel-imgs/3.jpeg",
           "google_maps_url": "https://maps.google.com/?q=Hotel+Crescent+Park+Chennai",
           "rooms": [
             {
@@ -76,7 +76,7 @@
           "checkin_time": "12:30 PM",
           "breakfast_provided": true,
           "amenities": ["Free Wi-Fi", "Gym", "Restaurant", "Parking"],
-          "image": "https://example.com/the_iris_hotel.jpg",
+          "image":  "src/components/images/hotel-imgs/4.webp",
           "google_maps_url": "https://maps.google.com/?q=The+Iris+Hotel+Chennai",
           "rooms": [
             {
@@ -98,7 +98,7 @@
           "checkin_time": "1:00 PM",
           "breakfast_provided": true,
           "amenities": ["Free Parking", "Gym", "Conference Room"],
-          "image": "https://example.com/e_hotel.jpg",
+          "image":  "src/components/images/hotel-imgs/5,jpg",
           "google_maps_url": "https://maps.google.com/?q=E+Hotel+Chennai",
           "rooms": [
             {
@@ -120,7 +120,7 @@
           "checkin_time": "2:00 PM",
           "breakfast_provided": true,
           "amenities": ["Swimming Pool", "Spa", "Bar"],
-          "image": "https://example.com/hotel_green_park.jpg",
+          "image":  "src/components/images/hotel-imgs/6.avif",
           "google_maps_url": "https://maps.google.com/?q=Hotel+Green+Park+Chennai",
           "rooms": [
             {
@@ -144,7 +144,7 @@
           "checkin_time": "3:00 PM",
           "breakfast_provided": true,
           "amenities": ["Infinity Pool", "Spa", "Fine Dining", "Personal Butler"],
-          "image": "https://example.com/itc_grand_chola.jpg",
+          "image":  "src/components/images/hotel-imgs/7.jpg",
           "google_maps_url": "https://maps.google.com/?q=ITC+Grand+Chola+Chennai",
           "rooms": [
             {
@@ -166,7 +166,7 @@
           "checkin_time": "2:30 PM",
           "breakfast_provided": true,
           "amenities": ["Ocean View", "Private Pool", "Luxury Spa"],
-          "image": "https://example.com/the_leela_palace.jpg",
+          "image": "src/components/images/hotel-imgs/8.avif",
           "google_maps_url": "https://maps.google.com/?q=The+Leela+Palace+Chennai",
           "rooms": [
             {
@@ -188,7 +188,7 @@
           "checkin_time": "1:30 PM",
           "breakfast_provided": true,
           "amenities": ["Fine Dining", "Private Chauffeur", "Spa"],
-          "image": "https://example.com/taj_coromandel.jpg",
+          "image":  "src/components/images/hotel-imgs/1.jpg",
           "google_maps_url": "https://maps.google.com/?q=Taj+Coromandel+Chennai",
           "rooms": [
             {
@@ -239,7 +239,7 @@
           "checkin_time": "11:30 AM",
           "breakfast_provided": false,
           "amenities": ["Free Parking", "Laundry Service", "Room Service"],
-          "image": "https://example.com/hotel_palm_tree.jpg",
+          "image":  "src/components/images/hotel-imgs/2.avif",
           "google_maps_url": "https://maps.google.com/?q=Hotel+Palm+Tree+Vellore",
           "rooms": [
             {
@@ -261,7 +261,7 @@
           "checkin_time": "1:00 PM",
           "breakfast_provided": true,
           "amenities": ["Free Wi-Fi", "Air Conditioning", "Restaurant"],
-          "image": "https://example.com/hotel_aavanaa_inn.jpg",
+          "image":  "src/components/images/hotel-imgs/3.jpeg",
           "google_maps_url": "https://maps.google.com/?q=Hotel+Aavanaa+Inn+Vellore",
           "rooms": [
             {
@@ -285,7 +285,7 @@
           "checkin_time": "12:30 PM",
           "breakfast_provided": true,
           "amenities": ["Free Wi-Fi", "Gym", "Restaurant", "Parking"],
-          "image": "https://example.com/khanna_fiesta.jpg",
+          "image":  "src/components/images/hotel-imgs/4.webp",
           "google_maps_url": "https://maps.google.com/?q=Khanna+Fiesta+Vellore",
           "rooms": [
             {
@@ -307,7 +307,7 @@
           "checkin_time": "1:00 PM",
           "breakfast_provided": true,
           "amenities": ["Free Parking", "Gym", "Conference Room"],
-          "image": "https://example.com/regency_sameera.jpg",
+          "image": "src/components/images/hotel-imgs/5.jpg",
           "google_maps_url": "https://maps.google.com/?q=Regency+Sameera+Vellore",
           "rooms": [
             {
@@ -329,7 +329,7 @@
           "checkin_time": "2:00 PM",
           "breakfast_provided": true,
           "amenities": ["Swimming Pool", "Spa", "Bar"],
-          "image": "https://example.com/grand_krishna.jpg",
+          "image":  "src/components/images/hotel-imgs/6.avif",
           "google_maps_url": "https://maps.google.com/?q=Grand+Krishna+Hotel+Vellore",
           "rooms": [
             {
@@ -353,7 +353,7 @@
           "checkin_time": "3:00 PM",
           "breakfast_provided": true,
           "amenities": ["Infinity Pool", "Spa", "Fine Dining", "Personal Butler"],
-          "image": "https://example.com/fortune_park.jpg",
+          "image":  "src/components/images/hotel-imgs/7.jpg",
           "google_maps_url": "https://maps.google.com/?q=Fortune+Park+Vellore",
           "rooms": [
             {
@@ -375,7 +375,7 @@
           "checkin_time": "2:30 PM",
           "breakfast_provided": true,
           "amenities": ["Ocean View", "Private Pool", "Luxury Spa"],
-          "image": "https://example.com/benzz_park.jpg",
+          "image":  "src/components/images/hotel-imgs/8.avif",
           "google_maps_url": "https://maps.google.com/?q=Hotel+Benzz+Park+Vellore",
           "rooms": [
             {
@@ -397,7 +397,7 @@
           "checkin_time": "1:30 PM",
           "breakfast_provided": true,
           "amenities": ["Fine Dining", "Private Chauffeur", "Spa"],
-          "image": "https://example.com/ginger_hotel.jpg",
+          "image":  "src/components/images/hotel-imgs/1.jpg",
           "google_maps_url": "https://maps.google.com/?q=Ginger+Hotel+Vellore",
           "rooms": [
             {
@@ -426,7 +426,7 @@
           "checkin_time": "12:00 PM",
           "breakfast_provided": true,
           "amenities": ["Free Wi-Fi", "Air Conditioning", "24/7 Front Desk"],
-          "image": "https://example.com/coramandal_heritage.jpg",
+          "image":  "src/components/images/hotel-imgs/3.jpeg",
           "google_maps_url": "https://maps.google.com/?q=Hotel+Coramandal+Heritage+Pondicherry",
           "rooms": [
             {
@@ -448,7 +448,7 @@
           "checkin_time": "11:00 AM",
           "breakfast_provided": false,
           "amenities": ["Free Parking", "Laundry Service", "Room Service"],
-          "image": "https://example.com/le_mirage.jpg",
+          "image":  "src/components/images/hotel-imgs/4.webp",
           "google_maps_url": "https://maps.google.com/?q=Le+Mirage+Pondicherry",
           "rooms": [
             {
@@ -470,7 +470,7 @@
           "checkin_time": "1:00 PM",
           "breakfast_provided": true,
           "amenities": ["Sea View", "Free Wi-Fi", "Restaurant"],
-          "image": "https://example.com/lotus_bay_view.jpg",
+          "image": "src/components/images/hotel-imgs/5.jpg",
           "google_maps_url": "https://maps.google.com/?q=Lotus+Bay+View+Hotel+Pondicherry",
           "rooms": [
             {
@@ -494,7 +494,7 @@
           "checkin_time": "12:30 PM",
           "breakfast_provided": true,
           "amenities": ["Free Wi-Fi", "Swimming Pool", "Gym", "Restaurant"],
-          "image": "https://example.com/hotel_atithi.jpg",
+          "image":  "src/components/images/hotel-imgs/6.avif",
           "google_maps_url": "https://maps.google.com/?q=Hotel+Atithi+Pondicherry",
           "rooms": [
             {
@@ -516,7 +516,7 @@
           "checkin_time": "1:00 PM",
           "breakfast_provided": true,
           "amenities": ["Conference Room", "Parking", "Gym"],
-          "image": "https://example.com/anandha_inn.jpg",
+          "image": "src/components/images/hotel-imgs/7.avif",
           "google_maps_url": "https://maps.google.com/?q=Anandha+Inn+Pondicherry",
           "rooms": [
             {
@@ -538,7 +538,7 @@
           "checkin_time": "2:00 PM",
           "breakfast_provided": true,
           "amenities": ["Swimming Pool", "Spa", "Bar"],
-          "image": "https://example.com/shenbaga_hotel.jpg",
+          "image":  "src/components/images/hotel-imgs/8.avif",
           "google_maps_url": "https://maps.google.com/?q=Shenbaga+Hotel+Pondicherry",
           "rooms": [
             {
@@ -562,7 +562,7 @@
           "checkin_time": "3:00 PM",
           "breakfast_provided": true,
           "amenities": ["Private Beach", "Spa", "Fine Dining", "Yoga Sessions"],
-          "image": "https://example.com/le_pondy.jpg",
+          "image":  "src/components/images/hotel-imgs/1.jpg",
           "google_maps_url": "https://maps.google.com/?q=Le+Pondy+Resort+Pondicherry",
           "rooms": [
             {
@@ -584,7 +584,7 @@
           "checkin_time": "2:30 PM",
           "breakfast_provided": true,
           "amenities": ["Seaside View", "Private Pool", "Luxury Spa"],
-          "image": "https://example.com/the_promenade.jpg",
+          "image":  "src/components/images/hotel-imgs/2.avif",
           "google_maps_url": "https://maps.google.com/?q=The+Promenade+Pondicherry",
           "rooms": [
             {
@@ -606,7 +606,7 @@
           "checkin_time": "1:30 PM",
           "breakfast_provided": true,
           "amenities": ["Fine Dining", "Private Chauffeur", "Wellness Spa"],
-          "image": "https://example.com/accord_puducherry.jpg",
+          "image": "src/components/images/hotel-imgs/3.jpeg",
           "google_maps_url": "https://maps.google.com/?q=Accord+Puducherry",
           "rooms": [
             {
@@ -635,7 +635,7 @@
           "checkin_time": "12:00 PM",
           "breakfast_provided": true,
           "amenities": ["Free Wi-Fi", "Air Conditioning", "24/7 Front Desk"],
-          "image": "https://example.com/mamalla_inn.jpg",
+          "image":  "src/components/images/hotel-imgs/4.webp",
           "google_maps_url": "https://maps.google.com/?q=Hotel+Mamalla+Inn+Mahabalipuram",
           "rooms": [
             {
@@ -657,7 +657,7 @@
           "checkin_time": "11:00 AM",
           "breakfast_provided": false,
           "amenities": ["Free Parking", "Laundry Service", "Garden View"],
-          "image": "https://example.com/murugan_guesthouse.jpg",
+          "image":  "src/components/images/hotel-imgs/5.jpg",
           "google_maps_url": "https://maps.google.com/?q=Sri+Murugan+Guest+House+Mahabalipuram",
           "rooms": [
             {
@@ -679,7 +679,7 @@
           "checkin_time": "1:00 PM",
           "breakfast_provided": true,
           "amenities": ["Free Wi-Fi", "Beach Access", "Restaurant"],
-          "image": "https://example.com/blue_moon_guesthouse.jpg",
+          "image": "src/components/images/hotel-imgs/6.avif",
           "google_maps_url": "https://maps.google.com/?q=Blue+Moon+Guest+House+Mahabalipuram",
           "rooms": [
             {
@@ -703,7 +703,7 @@
           "checkin_time": "12:30 PM",
           "breakfast_provided": true,
           "amenities": ["Free Wi-Fi", "Swimming Pool", "Restaurant", "Sea View"],
-          "image": "https://example.com/sea_breeze.jpg",
+          "image": "src/components/images/hotel-imgs/8.avif",
           "google_maps_url": "https://maps.google.com/?q=Hotel+Sea+Breeze+Mahabalipuram",
           "rooms": [
             {
@@ -725,7 +725,7 @@
           "checkin_time": "1:00 PM",
           "breakfast_provided": true,
           "amenities": ["Conference Room", "Gym", "Swimming Pool"],
-          "image": "https://example.com/grande_bay.jpg",
+          "image":  "src/components/images/hotel-imgs/7.jpg",
           "google_maps_url": "https://maps.google.com/?q=Grande+Bay+Resort+Mahabalipuram",
           "rooms": [
             {
@@ -747,7 +747,7 @@
           "checkin_time": "2:00 PM",
           "breakfast_provided": true,
           "amenities": ["Private Beach", "Swimming Pool", "Bar"],
-          "image": "https://example.com/mamalla_beach.jpg",
+          "image":  "src/components/images/hotel-imgs/1.jpg",
           "google_maps_url": "https://maps.google.com/?q=Mamalla+Beach+Resort+Mahabalipuram",
           "rooms": [
             {
@@ -771,7 +771,7 @@
           "checkin_time": "3:00 PM",
           "breakfast_provided": true,
           "amenities": ["Private Beach", "Infinity Pool", "Spa", "Luxury Dining"],
-          "image": "https://example.com/radisson_blu.jpg",
+          "image": "src/components/images/hotel-imgs/2.avif",
           "google_maps_url": "https://maps.google.com/?q=Radisson+Blu+Mahabalipuram",
           "rooms": [
             {
@@ -793,7 +793,7 @@
           "checkin_time": "2:30 PM",
           "breakfast_provided": true,
           "amenities": ["Seaside View", "Private Villas", "Luxury Spa"],
-          "image": "https://example.com/intercontinental_chennai.jpg",
+          "image":  "src/components/images/hotel-imgs/3.jpeg",
           "google_maps_url": "https://maps.google.com/?q=InterContinental+Chennai+Mahabalipuram",
           "rooms": [
             {
@@ -815,7 +815,7 @@
           "checkin_time": "1:30 PM",
           "breakfast_provided": true,
           "amenities": ["Fine Dining", "Luxury Cottages", "Private Chauffeur"],
-          "image": "https://example.com/taj_fishermans_cove.jpg",
+          "image": "src/components/images/hotel-imgs/4.webp",
           "google_maps_url": "https://maps.google.com/?q=Taj+Fishermans+Cove+Mahabalipuram",
           "rooms": [
             {
