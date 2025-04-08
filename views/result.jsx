@@ -6,6 +6,22 @@ const ItineraryResult = ({ plan, onUpdate, onDelete }) => {
   const [accommodationCost, setAccommodationCost] = useState(0);
   const [totalCost, setTotalCost] = useState(0);
   console.log(plan);
+
+  const openHotelPopup = () => {
+    const width = 600;
+    const height = 600;
+  
+    // Get the dimensions of the current screen
+    const left = window.screenX + (window.outerWidth - width) / 2;
+    const top = window.screenY + (window.outerHeight - height) / 2;
+  
+    const features = `width=${width},height=${height},left=${left},top=${top},` +
+                     `scrollbars=yes,resizable=yes`;
+  
+    window.open('/Hotels', 'HotelView', features);
+  };
+  
+
   useEffect(() => {
     setUpdatedPlan(plan);
     calculateCosts(plan);
@@ -271,6 +287,15 @@ const ItineraryResult = ({ plan, onUpdate, onDelete }) => {
           <p><strong>📅 Dates:</strong> {updatedPlan.startDate || "N/A"} to {updatedPlan.endDate || "N/A"}</p>
           <p><strong>🕒 Duration:</strong> {updatedPlan.duration ? `${updatedPlan.duration} days` : "N/A"}</p>
           <p><strong>👥 Travelers:</strong> {updatedPlan.travelers || "N/A"}</p>
+
+          <div className="d-flex justify-content-center align-items-center">
+            <button
+              onClick={openHotelPopup}
+              className="btn btn-primary"
+            >
+              View Hotels
+            </button>
+          </div>
 
           {/* Transport Options */}
           {updatedPlan.transportOptions?.length > 0 && (
