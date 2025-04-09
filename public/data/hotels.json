@@ -8,7 +8,7 @@
           "checkin_time": "12:00 PM",
           "breakfast_provided": true,
           "amenities": ["Free Wi-Fi", "Air Conditioning", "24/7 Front Desk"],
-          "image": "src/components/images/hotel-imgs/1.jsp",
+          "image": "src/components/images/hotel-imgs/1.jpg",
           "google_maps_url": "https://maps.google.com/?q=Hotel+Peace+Inn+Chennai",
           "rooms": [
             {
@@ -98,7 +98,7 @@
           "checkin_time": "1:00 PM",
           "breakfast_provided": true,
           "amenities": ["Free Parking", "Gym", "Conference Room"],
-          "image":  "src/components/images/hotel-imgs/5,jpg",
+          "image":  "src/components/images/hotel-imgs/5.jpg",
           "google_maps_url": "https://maps.google.com/?q=E+Hotel+Chennai",
           "rooms": [
             {
@@ -516,7 +516,7 @@
           "checkin_time": "1:00 PM",
           "breakfast_provided": true,
           "amenities": ["Conference Room", "Parking", "Gym"],
-          "image": "src/components/images/hotel-imgs/7.avif",
+          "image": "src/components/images/hotel-imgs/7.jpg",
           "google_maps_url": "https://maps.google.com/?q=Anandha+Inn+Pondicherry",
           "rooms": [
             {

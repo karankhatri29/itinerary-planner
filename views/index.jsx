@@ -155,9 +155,8 @@ const TamilNaduPlanner = ({ featuredDestinations = ["chennai", "vellore", "pondi
               ) : (
                 // Default categories when none are provided
                 ["Heritage", "Temples", "Nature", "Cuisine"].map((cat, index) => (
-                  <div className="col-md-3 col-6 mb-4" key={index}>
+                  <div className="col-md-3 col-6 mb-4 " key={index}>
                     <div className="card category-card h-100 text-center">
-                      <img src="sample_image.jpg" className="card-img-top" alt={cat} />
                       <div className="card-body">
                         <div className="category-icon mb-3">
                           <i className="bi bi-star fs-1"></i>
@@ -233,11 +232,10 @@ const TamilNaduPlanner = ({ featuredDestinations = ["chennai", "vellore", "pondi
                                   <div className="testimonial-quote mb-4">
                                     <i className="bi bi-quote fs-1 text-primary"></i>
                                   </div>
-                                  <p className="lead mb-4">"The Tamil Nadu Planner made our trip seamless and memorable. We discovered hidden gems we would have never found on our own!"</p>
+                                  <p className="lead mb-4">"The WanderSync Planner made our trip seamless and memorable. We discovered hidden gems we would have never found on our own!"</p>
                                   <div className="testimonial-person">
-                                    <img src="sample_image.jpg" className="rounded-circle mb-3" alt="Sample Traveler" width="80" height="80" />
-                                    <h5 className="mb-0">Jane Traveler</h5>
-                                    <p className="text-muted">New York, USA</p>
+                                    <h5 className="mb-0">Karan Khatri</h5>
+                                    <p className="text-muted">Hyderabad,India</p>
                                     <div className="rating text-warning">
                                       <i className="bi bi-star-fill"></i>
                                       <i className="bi bi-star-fill"></i>
